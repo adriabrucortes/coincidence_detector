@@ -17,6 +17,7 @@ always @(posedge Clk or negedge Rst_n) begin
     end else begin
         for (int i = 0; i < NCHAN; i++) begin  // Put regs for every channel
 
+            // THIS CAN BE PROBLEMATIC BC MAYBE J GOES OUT OF SCOPE, SHOULD TEST IN TB
             int j;
             for (j = 0; j < Delays[i]; j++) begin
                 delayRegs[i] <= {delayRegs[i], Channels[i]};
