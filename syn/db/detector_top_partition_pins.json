@@ -1,0 +1,193 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Counts[0][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[0][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[0][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[0][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[1][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[1][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[2][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[2][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[2][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[2][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[3][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[3][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[3][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[3][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[4][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[4][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[4][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[4][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[5][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[5][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[5][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[5][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Clk",
+					"strict" : false
+				},
+				{
+					"name" : "Rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[0][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[2][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[0][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[0][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[0][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[2][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[2][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[2][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
