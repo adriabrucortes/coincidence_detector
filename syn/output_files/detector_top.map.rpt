@@ -1,5 +1,5 @@
 Analysis & Synthesis report for detector_top
-Wed May 08 17:03:17 2024
+Wed May 08 17:32:49 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,14 +14,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |detector_top
- 10. Parameter Settings for User Entity Instance: detector:det
- 11. Parameter Settings for User Entity Instance: detector:det|DelayGenerator:delay
- 12. Parameter Settings for User Entity Instance: detector:det|pos_edge_det:posedge_det
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
- 16. Analysis & Synthesis Suppressed Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |detector_top
+ 11. Parameter Settings for User Entity Instance: detector:det
+ 12. Parameter Settings for User Entity Instance: detector:det|DelayGenerator:delay
+ 13. Parameter Settings for User Entity Instance: detector:det|pos_edge_det:posedge_det
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+ 17. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -48,13 +49,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 08 17:03:17 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 08 17:32:49 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; detector_top                                ;
 ; Top-level Entity Name           ; detector_top                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 90                                          ;
+; Total registers                 ; 168                                         ;
 ; Total pins                      ; 92                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -189,25 +190,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 50        ;
+; Estimate of Logic utilization (ALMs needed) ; 96        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 72        ;
-;     -- 7 input functions                    ; 6         ;
-;     -- 6 input functions                    ; 15        ;
+; Combinational ALUT usage for logic          ; 96        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 45        ;
 ;     -- 5 input functions                    ; 15        ;
 ;     -- 4 input functions                    ; 15        ;
 ;     -- <=3 input functions                  ; 21        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 90        ;
+; Dedicated logic registers                   ; 168       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 92        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; Clk~input ;
-; Maximum fan-out                             ; 90        ;
-; Total fan-out                               ; 740       ;
-; Average fan-out                             ; 2.14      ;
+; Maximum fan-out                             ; 168       ;
+; Total fan-out                               ; 1112      ;
+; Average fan-out                             ; 2.48      ;
 +---------------------------------------------+-----------+
 
 
@@ -216,9 +217,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name    ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+----------------+--------------+
-; |detector_top                    ; 72 (0)              ; 90 (0)                    ; 0                 ; 0          ; 92   ; 0            ; |detector_top                                       ; detector_top   ; work         ;
-;    |detector:det|                ; 72 (60)             ; 90 (60)                   ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det                          ; detector       ; work         ;
-;       |DelayGenerator:delay|     ; 6 (6)               ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|DelayGenerator:delay     ; DelayGenerator ; work         ;
+; |detector_top                    ; 96 (0)              ; 168 (0)                   ; 0                 ; 0          ; 92   ; 0            ; |detector_top                                       ; detector_top   ; work         ;
+;    |detector:det|                ; 96 (60)             ; 168 (60)                  ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det                          ; detector       ; work         ;
+;       |DelayGenerator:delay|     ; 30 (30)             ; 102 (102)                 ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|DelayGenerator:delay     ; DelayGenerator ; work         ;
 ;       |pos_edge_det:posedge_det| ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|pos_edge_det:posedge_det ; pos_edge_det   ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -229,14 +230,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 90    ;
+; Total registers                              ; 168   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 78    ;
+; Number of registers using Asynchronous Clear ; 156   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 6     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
+; 16:1               ; 6 bits    ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |detector_top|detector:det|DelayGenerator:delay|DlayChann[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------+
@@ -246,7 +256,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+-----------------------------------------------------+
 ; NCHAN          ; 6     ; Signed Integer                                      ;
 ; NBITS          ; 4     ; Signed Integer                                      ;
-; NREGS          ; 3     ; Signed Integer                                      ;
+; NREGS          ; 1024  ; Signed Integer                                      ;
 +----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -258,7 +268,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------+
 ; NCHAN          ; 6     ; Signed Integer                   ;
 ; NBITS          ; 4     ; Signed Integer                   ;
-; NREGS          ; 3     ; Signed Integer                   ;
+; NREGS          ; 1024  ; Signed Integer                   ;
 +----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -270,7 +280,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; NCHAN          ; 6     ; Signed Integer                                        ;
 ; NBITS          ; 4     ; Signed Integer                                        ;
-; NREGS          ; 3     ; Signed Integer                                        ;
+; NREGS          ; 1024  ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -290,23 +300,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 90                          ;
-;     CLR               ; 78                          ;
+; arriav_ff             ; 168                         ;
+;     CLR               ; 156                         ;
 ;     ENA               ; 6                           ;
 ;     plain             ; 6                           ;
-; arriav_lcell_comb     ; 72                          ;
-;     extend            ; 6                           ;
-;         7 data inputs ; 6                           ;
-;     normal            ; 66                          ;
+; arriav_lcell_comb     ; 96                          ;
+;     normal            ; 96                          ;
 ;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 15                          ;
 ;         4 data inputs ; 15                          ;
 ;         5 data inputs ; 15                          ;
-;         6 data inputs ; 15                          ;
+;         6 data inputs ; 45                          ;
 ; boundary_port         ; 92                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.99                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.46                        ;
 +-----------------------+-----------------------------+
 
 
@@ -325,7 +333,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 08 17:03:10 2024
+    Info: Processing started: Wed May 08 17:32:42 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off detector_top -c detector_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
@@ -341,18 +349,40 @@ Info (12127): Elaborating entity "detector_top" for the top level hierarchy
 Info (12128): Elaborating entity "detector" for hierarchy "detector:det" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 18
 Warning (10036): Verilog HDL or VHDL warning at detector.sv(8): object "iCnt" assigned a value but never read File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 8
 Info (12128): Elaborating entity "DelayGenerator" for hierarchy "detector:det|DelayGenerator:delay" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 22
+Warning (10027): Verilog HDL or VHDL warning at the DelayGenerator.sv(33): index expression is not wide enough to address all of the elements in the array File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv Line: 33
 Info (12128): Elaborating entity "pos_edge_det" for hierarchy "detector:det|pos_edge_det:posedge_det" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 30
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/HP/Documents/Projectes/Coincidence_detector/syn/output_files/detector_top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 20 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "Delays[1][0]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[1][1]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[1][2]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[1][3]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[2][0]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[2][1]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[2][2]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[2][3]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[3][0]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[3][1]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[3][2]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[3][3]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[4][0]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[4][1]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[4][2]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[4][3]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[5][0]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[5][1]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[5][2]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+    Warning (15610): No output dependent on input pin "Delays[5][3]" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 4
+Info (21057): Implemented 284 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 90 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4867 megabytes
-    Info: Processing ended: Wed May 08 17:03:17 2024
+    Info (21061): Implemented 192 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4871 megabytes
+    Info: Processing ended: Wed May 08 17:32:49 2024
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:03
 

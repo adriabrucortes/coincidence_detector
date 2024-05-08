@@ -11,52 +11,52 @@ cModel Technology
 dC:/Users/HP/Documents/Universitat/8e/DSSD/pracs/p4/sim
 vDelayGenerator
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1715180054
+Z1 !s110 1715188575
 !i10b 1
-!s100 >CUTcAeDGicVi<Y22P2?m2
+!s100 a>YYL9FYHXdLG2jQB92kk0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I7fjQGXzm5iNiX7]AD9a]63
+I@eOB7cV9_ABGig10KEj0[0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dC:/Users/HP/Documents/Projectes/Coincidence_detector/sim
-w1715180038
-8C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/DelayGenerator.sv
-FC:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/DelayGenerator.sv
-!i122 199
-L0 1 41
+w1715182358
+8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv
+FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv
+!i122 211
+L0 1 38
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1715180054.000000
-!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/DelayGenerator.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/DelayGenerator.sv|
+Z6 !s108 1715188575.000000
+!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv|
 !i113 1
 Z7 o-work work -sv
 Z8 tCvgOpt 0
 n@delay@generator
 vdetector
 R0
-R1
+Z9 !s110 1715188576
 !i10b 1
 !s100 5hP;f1i3F2m2c=d<K:K`H0
 R2
-I7S@;G`MGe2Po2COel:1<d2
+I:`MPWIzbNLO?]a@nfZQTS1
 R3
 S1
 R4
 w1715172681
-8C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/detector.sv
-FC:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/detector.sv
-!i122 200
+8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv
+FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv
+!i122 213
 L0 1 53
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/detector.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/detector.sv|
+!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv|
 !i113 1
 R7
 R8
@@ -66,27 +66,27 @@ R1
 !i10b 1
 !s100 O2B3ZHI`6EOm:0^[ZnXSX1
 R2
-IZLInNFe`h[IR6o^A5DF2c0
+I6B=^QKF;f8MG>A5l4<Hch1
 R3
 S1
 R4
 w1715088992
-8C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/pos_edge_det.sv
-FC:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/pos_edge_det.sv
-!i122 201
+8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv
+FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv
+!i122 212
 L0 1 14
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/pos_edge_det.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/pos_edge_det.sv|
+!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv|
 !i113 1
 R7
 R8
 vsys_model
-R1
+!s110 1715182503
 !i10b 1
 !s100 >O8bZHHS93Id4mQQL;LRf3
 R2
@@ -96,13 +96,13 @@ R4
 w1705861500
 8C:/Users/HP/Documents/Projectes/Coincidence_detector/misc/sys_model.v
 FC:/Users/HP/Documents/Projectes/Coincidence_detector/misc/sys_model.v
-!i122 203
+!i122 204
 L0 23 38
 R5
 r1
 !s85 0
 31
-R6
+!s108 1715182503.000000
 !s107 ../misc/timescale.v|C:/Users/HP/Documents/Projectes/Coincidence_detector/misc/sys_model.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/misc/sys_model.v|
 !i113 1
@@ -110,24 +110,24 @@ o-work work
 R8
 vtb_detector
 R0
-R1
+R9
 !i10b 1
-!s100 7WI_Rl505:<Lc4===9jB23
+!s100 B0ekNV2;;lEU><ZAhnDn83
 R2
-I0k4<NSd^HCAzIW=gT0>lo0
+IGbeM@IQGiZnXZ[eWm]mR71
 R3
 S1
 R4
-w1715180051
+w1715188572
 8C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv
 FC:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv
-!i122 202
-L0 1 82
+!i122 214
+L0 1 87
 R5
 r1
 !s85 0
 31
-R6
+!s108 1715188576.000000
 !s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv|
 !i113 1

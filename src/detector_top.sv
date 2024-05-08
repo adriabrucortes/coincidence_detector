@@ -1,4 +1,4 @@
-module detector_top #(parameter NCHAN = 6, NBITS = 4, NREGS = 3) (
+module detector_top #(parameter NCHAN = 6, NBITS = 4, NREGS = 1024) (
     input wire                  Clk, Rst_n,
     input wire [NCHAN-1:0]      Channels,
     input wire [NBITS-1:0]      Delays [NCHAN-1:0],

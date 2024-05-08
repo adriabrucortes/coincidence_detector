@@ -20,12 +20,9 @@ always @(posedge Clk or negedge Rst_n) begin
             automatic int j = 0;
 
             // Swapped "for" for "do while" to ensure this happens at least once (in case there is 0 delay)
-            // This entails that there will always be at least 1+1 delay
-            do begin 
-                delayRegs[i] <= {delayRegs[i][NREGS-2:0], Channels[i]}; // Shift left
-                j++;
-            end
-            while (j < Delays[i]);
+            // This entails that there will always be at least 1+1 delay 
+            delayRegs[i] <= {delayRegs[i][NREGS-2:0], Channels[i]}; // Shift left
+
 
             /*
             for (j = 0; j < Delays[i]; j++) begin
@@ -33,7 +30,7 @@ always @(posedge Clk or negedge Rst_n) begin
             end
             */
 
-            DlayChann[i] <= delayRegs[i][j];
+            DlayChann[i] <= delayRegs[i][Delays[j]];
         end
     end
 end

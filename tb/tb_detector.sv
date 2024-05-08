@@ -70,7 +70,7 @@ task test1;
 */
 
     begin
-        expectCounts = 0;
+        //expectCounts <= 0;
         automatic int expCnt;
         repeat(N) begin
             expCnt = 0; // Reset counter
