@@ -1,0 +1,1330 @@
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv failed with 1 errors.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 4 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv failed with 2 errors.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 4 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 2 failed with 6 errors.
+# Error opening C:/Users/HP/Documents/Projectes/Coincidence_detector/sim/(vlog-13069) C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/detector.sv
+# Path name 'C:/Users/HP/Documents/Projectes/Coincidence_detector/sim/(vlog-13069) C:/Users/HP/Documents/Projectes/Coincidence_detector/rtl/detector.sv' doesn't exist.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv failed with 1 errors.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 4 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv failed with 1 errors.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 4 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 4 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 2 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_detector
+# vsim -gui work.tb_detector 
+# Start time: 13:58:37 on May 08,2024
+# Loading sv_std.std
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+add wave -position insertpoint  \
+sim:/tb_detector/det/Clk \
+sim:/tb_detector/det/Rst_n \
+sim:/tb_detector/det/Channels \
+sim:/tb_detector/det/Delays \
+sim:/tb_detector/det/Counts \
+sim:/tb_detector/det/delayed \
+sim:/tb_detector/det/Pulses
+run -all
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 1 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1107 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# WARNING: No extended dataflow license exists
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(54)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 54
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(54)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 54
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(55)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 55
+add wave -position insertpoint  \
+sim:/tb_detector/NCHAN \
+sim:/tb_detector/NBITS \
+sim:/tb_detector/NREGS \
+sim:/tb_detector/NCOMB \
+sim:/tb_detector/Clk \
+sim:/tb_detector/Rst_n \
+sim:/tb_detector/Channels \
+sim:/tb_detector/Delays \
+sim:/tb_detector/Counts \
+sim:/tb_detector/expectCounts
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(55)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 55
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+# Break key hit
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 1 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1127 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+# ** Warning: (vsim-PLI-3003) [TOFD] - System task or function '$max' is not defined.
+#    Time: 0 ps  Iteration: 0  Region: /tb_detector/test File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$max'
+#    Time: 67 ns  Iteration: 0  Process: /tb_detector/#INITIAL#46 File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+# Input vector changed:
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$max'
+#    Time: 67 ns  Iteration: 0  Process: /tb_detector/#INITIAL#46 File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+# Input vector changed:
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$max'
+#    Time: 67 ns  Iteration: 0  Process: /tb_detector/#INITIAL#46 File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+# Input vector changed:
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$max'
+#    Time: 67 ns  Iteration: 0  Process: /tb_detector/#INITIAL#46 File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+# Input vector changed:
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$max'
+#    Time: 67 ns  Iteration: 0  Process: /tb_detector/#INITIAL#46 File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+# Input vector changed:
+# ** Error (suppressible): (vsim-12023) Cannot execute undefined system task/function '$max'
+#    Time: 67 ns  Iteration: 0  Process: /tb_detector/#INITIAL#46 File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 68
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1067 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 1 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1367 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1127 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv failed with 1 errors.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+add wave -position insertpoint  \
+sim:/tb_detector/det/iCnt
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1127 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1127 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# Input vector changed:
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/HP/Documents/Projectes/Coincidence_detector/sim/wave.do
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv failed with 1 errors.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+# ** Error: (vsim-3043) Unresolved reference to 'test'.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_detector File: C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv Line: 52
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_detector
+# vsim -gui work.tb_detector 
+# Start time: 13:58:37 on May 08,2024
+# Loading sv_std.std
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector:  7
+# [Info-   77.00 ns] Input vector: 12
+# [Info-   87.00 ns] Input vector: 12
+# [Info-   97.00 ns] Input vector: 12
+# [Info-  107.00 ns] Input vector:  8
+# [Info-  117.00 ns] Input vector:  7
+# [Info-  127.00 ns] Input vector:  6
+# [Info-  137.00 ns] Input vector:  4
+# [Info-  147.00 ns] Input vector:  0
+# [Info-  157.00 ns] Input vector:  9
+# [Info-  167.00 ns] Input vector:  8
+# [Info-  177.00 ns] Input vector: 11
+# [Info-  187.00 ns] Input vector:  1
+# [Info-  197.00 ns] Input vector:  2
+# [Info-  207.00 ns] Input vector: 12
+# [Info-  217.00 ns] Input vector:  5
+# [Info-  227.00 ns] Input vector: 14
+# [Info-  237.00 ns] Input vector:  6
+# [Info-  247.00 ns] Input vector:  0
+# [Info-  257.00 ns] Input vector:  7
+# [Info-  267.00 ns] Input vector: 14
+# [Info-  277.00 ns] Input vector:  3
+# [Info-  287.00 ns] Input vector:  6
+# [Info-  297.00 ns] Input vector:  4
+# [Info-  307.00 ns] Input vector: 13
+# [Info-  317.00 ns] Input vector: 12
+# [Info-  327.00 ns] Input vector: 15
+# [Info-  337.00 ns] Input vector:  2
+# [Info-  347.00 ns] Input vector:  7
+# [Info-  357.00 ns] Input vector: 15
+# [Info-  367.00 ns] Input vector: 14
+# [Info-  377.00 ns] Input vector: 12
+# [Info-  387.00 ns] Input vector: 12
+# [Info-  397.00 ns] Input vector:  4
+# [Info-  407.00 ns] Input vector: 14
+# [Info-  417.00 ns] Input vector:  5
+# [Info-  427.00 ns] Input vector:  2
+# [Info-  437.00 ns] Input vector: 11
+# [Info-  447.00 ns] Input vector:  2
+# [Info-  457.00 ns] Input vector: 13
+# [Info-  467.00 ns] Input vector:  1
+# [Info-  477.00 ns] Input vector:  8
+# [Info-  487.00 ns] Input vector:  9
+# [Info-  497.00 ns] Input vector:  0
+# [Info-  507.00 ns] Input vector:  2
+# [Info-  517.00 ns] Input vector: 12
+# [Info-  527.00 ns] Input vector:  1
+# [Info-  537.00 ns] Input vector:  8
+# [Info-  547.00 ns] Input vector: 15
+# [Info-  557.00 ns] Input vector:  5
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv failed with 1 errors.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+add wave -position insertpoint  \
+sim:/tb_detector/det/delay/Channels \
+sim:/tb_detector/det/delay/Delays \
+sim:/tb_detector/det/delay/DlayChann \
+sim:/tb_detector/det/delay/delayRegs
+restart
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of DelayGenerator.sv was successful.
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+# Compile of DelayGenerator.sv was successful.
+# Compile of detector.sv was successful.
+# Compile of pos_edge_det.sv was successful.
+# Compile of tb_detector.sv was successful.
+# Compile of sys_model.v was successful.
+# Compile of timescale.v was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_detector
+# Loading work.sys_model
+# Loading work.detector
+# Loading work.DelayGenerator
+# Loading work.pos_edge_det
+run -all
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# [Info-   67.00 ns] Input vector: 0111
+# [Info-   77.00 ns] Input vector: 1100
+# [Info-   87.00 ns] Input vector: 1100
+# [Info-   97.00 ns] Input vector: 1100
+# [Info-  107.00 ns] Input vector: 1000
+# [Info-  117.00 ns] Input vector: 0111
+# [Info-  127.00 ns] Input vector: 0110
+# [Info-  137.00 ns] Input vector: 0100
+# [Info-  147.00 ns] Input vector: 0000
+# [Info-  157.00 ns] Input vector: 1001
+# [Info-  167.00 ns] Input vector: 1000
+# [Info-  177.00 ns] Input vector: 1011
+# [Info-  187.00 ns] Input vector: 0001
+# [Info-  197.00 ns] Input vector: 0010
+# [Info-  207.00 ns] Input vector: 1100
+# [Info-  217.00 ns] Input vector: 0101
+# [Info-  227.00 ns] Input vector: 1110
+# [Info-  237.00 ns] Input vector: 0110
+# [Info-  247.00 ns] Input vector: 0000
+# [Info-  257.00 ns] Input vector: 0111
+# [Info-  267.00 ns] Input vector: 1110
+# [Info-  277.00 ns] Input vector: 0011
+# [Info-  287.00 ns] Input vector: 0110
+# [Info-  297.00 ns] Input vector: 0100
+# [Info-  307.00 ns] Input vector: 1101
+# [Info-  317.00 ns] Input vector: 1100
+# [Info-  327.00 ns] Input vector: 1111
+# [Info-  337.00 ns] Input vector: 0010
+# [Info-  347.00 ns] Input vector: 0111
+# [Info-  357.00 ns] Input vector: 1111
+# [Info-  367.00 ns] Input vector: 1110
+# [Info-  377.00 ns] Input vector: 1100
+# [Info-  387.00 ns] Input vector: 1100
+# [Info-  397.00 ns] Input vector: 0100
+# [Info-  407.00 ns] Input vector: 1110
+# [Info-  417.00 ns] Input vector: 0101
+# [Info-  427.00 ns] Input vector: 0010
+# [Info-  437.00 ns] Input vector: 1011
+# [Info-  447.00 ns] Input vector: 0010
+# [Info-  457.00 ns] Input vector: 1101
+# [Info-  467.00 ns] Input vector: 0001
+# [Info-  477.00 ns] Input vector: 1000
+# [Info-  487.00 ns] Input vector: 1001
+# [Info-  497.00 ns] Input vector: 0000
+# [Info-  507.00 ns] Input vector: 0010
+# [Info-  517.00 ns] Input vector: 1100
+# [Info-  527.00 ns] Input vector: 0001
+# [Info-  537.00 ns] Input vector: 1000
+# [Info-  547.00 ns] Input vector: 1111
+# [Info-  557.00 ns] Input vector: 0101
+# ** Note: $stop    : C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv(56)
+#    Time: 1567 ns  Iteration: 0  Instance: /tb_detector
+# Break in Module tb_detector at C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv line 56
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/HP/Documents/Projectes/Coincidence_detector/sim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/HP/Documents/Projectes/Coincidence_detector/sim/wave.do
+# End time: 17:06:57 on May 08,2024, Elapsed time: 3:08:20
+# Errors: 0, Warnings: 1

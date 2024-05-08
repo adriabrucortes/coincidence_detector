@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed May 08 00:07:09 2024
+Analysis & Synthesis Status : Successful - Wed May 08 17:03:17 2024
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : detector_top
 Top-level Entity Name : detector_top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 71
-Total pins : 46
+Total registers : 90
+Total pins : 92
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

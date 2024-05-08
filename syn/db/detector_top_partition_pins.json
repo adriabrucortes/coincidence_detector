@@ -100,6 +100,150 @@
 					"strict" : false
 				},
 				{
+					"name" : "Counts[6][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[6][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[6][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[6][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[7][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[7][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[7][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[7][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[8][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[8][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[8][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[8][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[9][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[9][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[9][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[9][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[10][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[10][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[10][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[10][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[11][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[11][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[11][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[11][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[12][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[12][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[12][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[12][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[13][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[13][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[13][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[13][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[14][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[14][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[14][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Counts[14][3]",
+					"strict" : false
+				},
+				{
 					"name" : "Clk",
 					"strict" : false
 				},
@@ -108,55 +252,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "Delays[3][0]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[1][0]",
+					"name" : "Delays[0][1]",
 					"strict" : false
 				},
 				{
 					"name" : "Delays[0][0]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[2][0]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[3][1]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[3][2]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[3][3]",
-					"strict" : false
-				},
-				{
-					"name" : "Channels[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[1][1]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[1][2]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[1][3]",
-					"strict" : false
-				},
-				{
-					"name" : "Channels[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Delays[0][1]",
 					"strict" : false
 				},
 				{
@@ -168,11 +268,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "Channels[0]",
+					"name" : "Delays[1][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[1][3]",
 					"strict" : false
 				},
 				{
 					"name" : "Delays[2][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[2][0]",
 					"strict" : false
 				},
 				{
@@ -184,7 +300,75 @@
 					"strict" : false
 				},
 				{
+					"name" : "Delays[3][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[3][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[4][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[4][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[4][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[4][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[5][1]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[5][0]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[5][2]",
+					"strict" : false
+				},
+				{
+					"name" : "Delays[5][3]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[1]",
+					"strict" : false
+				},
+				{
 					"name" : "Channels[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Channels[5]",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for detector_top
-Wed May 08 00:07:09 2024
+Wed May 08 17:03:17 2024
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,17 +13,15 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |detector_top
- 12. Parameter Settings for User Entity Instance: detector:det
- 13. Parameter Settings for User Entity Instance: detector:det|DelayGenerator:delay
- 14. Parameter Settings for User Entity Instance: detector:det|pos_edge_det:posedge_det
- 15. Post-Synthesis Netlist Statistics for Top Partition
- 16. Elapsed Time Per Partition
- 17. Analysis & Synthesis Messages
- 18. Analysis & Synthesis Suppressed Messages
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |detector_top
+ 10. Parameter Settings for User Entity Instance: detector:det
+ 11. Parameter Settings for User Entity Instance: detector:det|DelayGenerator:delay
+ 12. Parameter Settings for User Entity Instance: detector:det|pos_edge_det:posedge_det
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -50,14 +48,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed May 08 00:07:09 2024       ;
+; Analysis & Synthesis Status     ; Successful - Wed May 08 17:03:17 2024       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; detector_top                                ;
 ; Top-level Entity Name           ; detector_top                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 71                                          ;
-; Total pins                      ; 46                                          ;
+; Total registers                 ; 90                                          ;
+; Total pins                      ; 92                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -162,28 +160,28 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processors 2-10        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; ../rtl/pos_edge_det.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/adria/Documents/Feina/coincidence_detector/rtl/pos_edge_det.sv   ;         ;
-; ../rtl/detector_top.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector_top.sv   ;         ;
-; ../rtl/detector.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector.sv       ;         ;
-; ../rtl/DelayGenerator.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/adria/Documents/Feina/coincidence_detector/rtl/DelayGenerator.sv ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; ../src/pos_edge_det.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv   ;         ;
+; ../src/detector_top.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv   ;         ;
+; ../src/detector.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv       ;         ;
+; ../src/DelayGenerator.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -191,25 +189,25 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 150       ;
+; Estimate of Logic utilization (ALMs needed) ; 50        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 221       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 76        ;
-;     -- 5 input functions                    ; 19        ;
-;     -- 4 input functions                    ; 11        ;
-;     -- <=3 input functions                  ; 115       ;
+; Combinational ALUT usage for logic          ; 72        ;
+;     -- 7 input functions                    ; 6         ;
+;     -- 6 input functions                    ; 15        ;
+;     -- 5 input functions                    ; 15        ;
+;     -- 4 input functions                    ; 15        ;
+;     -- <=3 input functions                  ; 21        ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 71        ;
+; Dedicated logic registers                   ; 90        ;
 ;                                             ;           ;
-; I/O pins                                    ; 46        ;
+; I/O pins                                    ; 92        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; Clk~input ;
-; Maximum fan-out                             ; 71        ;
-; Total fan-out                               ; 1141      ;
-; Average fan-out                             ; 2.97      ;
+; Maximum fan-out                             ; 90        ;
+; Total fan-out                               ; 740       ;
+; Average fan-out                             ; 2.14      ;
 +---------------------------------------------+-----------+
 
 
@@ -218,22 +216,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Entity Name    ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+----------------+--------------+
-; |detector_top                    ; 221 (0)             ; 71 (0)                    ; 0                 ; 0          ; 46   ; 0            ; |detector_top                                       ; detector_top   ; work         ;
-;    |detector:det|                ; 221 (213)           ; 71 (55)                   ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det                          ; detector       ; work         ;
-;       |DelayGenerator:delay|     ; 8 (8)               ; 12 (12)                   ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|DelayGenerator:delay     ; DelayGenerator ; work         ;
-;       |pos_edge_det:posedge_det| ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|pos_edge_det:posedge_det ; pos_edge_det   ; work         ;
+; |detector_top                    ; 72 (0)              ; 90 (0)                    ; 0                 ; 0          ; 92   ; 0            ; |detector_top                                       ; detector_top   ; work         ;
+;    |detector:det|                ; 72 (60)             ; 90 (60)                   ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det                          ; detector       ; work         ;
+;       |DelayGenerator:delay|     ; 6 (6)               ; 24 (24)                   ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|DelayGenerator:delay     ; DelayGenerator ; work         ;
+;       |pos_edge_det:posedge_det| ; 6 (6)               ; 6 (6)                     ; 0                 ; 0          ; 0    ; 0            ; |detector_top|detector:det|pos_edge_det:posedge_det ; pos_edge_det   ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; detector:det|index[0]                 ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1 ;                                        ;
-+---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -241,25 +229,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 71    ;
+; Total registers                              ; 90    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 24    ;
+; Number of registers using Asynchronous Clear ; 78    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 67    ;
+; Number of registers using Clock Enable       ; 6     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |detector_top|detector:det|Counts[0][0] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |detector_top|detector:det|Counts[2][0] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |detector_top|detector:det|Counts[5][0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +------------------------------------------------------------------------------+
@@ -267,9 +244,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+-------+-----------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                ;
 +----------------+-------+-----------------------------------------------------+
-; NCHAN          ; 4     ; Signed Integer                                      ;
+; NCHAN          ; 6     ; Signed Integer                                      ;
 ; NBITS          ; 4     ; Signed Integer                                      ;
-; NREGS          ; 2     ; Signed Integer                                      ;
+; NREGS          ; 3     ; Signed Integer                                      ;
 +----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -279,9 +256,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------+
 ; Parameter Name ; Value ; Type                             ;
 +----------------+-------+----------------------------------+
-; NCHAN          ; 4     ; Signed Integer                   ;
+; NCHAN          ; 6     ; Signed Integer                   ;
 ; NBITS          ; 4     ; Signed Integer                   ;
-; NREGS          ; 2     ; Signed Integer                   ;
+; NREGS          ; 3     ; Signed Integer                   ;
 +----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -291,9 +268,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                  ;
 +----------------+-------+-------------------------------------------------------+
-; NCHAN          ; 4     ; Signed Integer                                        ;
+; NCHAN          ; 6     ; Signed Integer                                        ;
 ; NBITS          ; 4     ; Signed Integer                                        ;
-; NREGS          ; 2     ; Signed Integer                                        ;
+; NREGS          ; 3     ; Signed Integer                                        ;
 +----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -303,7 +280,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; NCHAN          ; 4     ; Signed Integer                                            ;
+; NCHAN          ; 6     ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -313,25 +290,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 71                          ;
-;     ENA               ; 43                          ;
-;     ENA CLR           ; 24                          ;
-;     plain             ; 4                           ;
-; arriav_lcell_comb     ; 221                         ;
-;     arith             ; 90                          ;
-;         1 data inputs ; 87                          ;
-;         2 data inputs ; 3                           ;
-;     normal            ; 131                         ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 14                          ;
-;         4 data inputs ; 11                          ;
-;         5 data inputs ; 19                          ;
-;         6 data inputs ; 76                          ;
-; boundary_port         ; 46                          ;
+; arriav_ff             ; 90                          ;
+;     CLR               ; 78                          ;
+;     ENA               ; 6                           ;
+;     plain             ; 6                           ;
+; arriav_lcell_comb     ; 72                          ;
+;     extend            ; 6                           ;
+;         7 data inputs ; 6                           ;
+;     normal            ; 66                          ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 15                          ;
+;         4 data inputs ; 15                          ;
+;         5 data inputs ; 15                          ;
+;         6 data inputs ; 15                          ;
+; boundary_port         ; 92                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.70                        ;
-; Average LUT depth     ; 5.65                        ;
+; Max LUT depth         ; 1.00                        ;
+; Average LUT depth     ; 0.99                        ;
 +-----------------------+-----------------------------+
 
 
@@ -350,41 +325,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed May 08 00:07:02 2024
+    Info: Processing started: Wed May 08 17:03:10 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off detector_top -c detector_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /users/adria/documents/feina/coincidence_detector/rtl/pos_edge_det.sv
-    Info (12023): Found entity 1: pos_edge_det File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/pos_edge_det.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/adria/documents/feina/coincidence_detector/rtl/detector_top.sv
-    Info (12023): Found entity 1: detector_top File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector_top.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/adria/documents/feina/coincidence_detector/rtl/detector.sv
-    Info (12023): Found entity 1: detector File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/adria/documents/feina/coincidence_detector/rtl/delaygenerator.sv
-    Info (12023): Found entity 1: DelayGenerator File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/DelayGenerator.sv Line: 1
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/documents/projectes/coincidence_detector/src/pos_edge_det.sv
+    Info (12023): Found entity 1: pos_edge_det File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/documents/projectes/coincidence_detector/src/detector_top.sv
+    Info (12023): Found entity 1: detector_top File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/documents/projectes/coincidence_detector/src/detector.sv
+    Info (12023): Found entity 1: detector File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hp/documents/projectes/coincidence_detector/src/delaygenerator.sv
+    Info (12023): Found entity 1: DelayGenerator File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv Line: 1
 Info (12127): Elaborating entity "detector_top" for the top level hierarchy
-Info (12128): Elaborating entity "detector" for hierarchy "detector:det" File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector_top.sv Line: 18
-Info (12128): Elaborating entity "DelayGenerator" for hierarchy "detector:det|DelayGenerator:delay" File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at DelayGenerator.sv(23): truncated value with size 3 to match size of target (2) File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/DelayGenerator.sv Line: 23
-Info (12128): Elaborating entity "pos_edge_det" for hierarchy "detector:det|pos_edge_det:posedge_det" File: C:/Users/adria/Documents/Feina/coincidence_detector/rtl/detector.sv Line: 29
+Info (12128): Elaborating entity "detector" for hierarchy "detector:det" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector_top.sv Line: 18
+Warning (10036): Verilog HDL or VHDL warning at detector.sv(8): object "iCnt" assigned a value but never read File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 8
+Info (12128): Elaborating entity "DelayGenerator" for hierarchy "detector:det|DelayGenerator:delay" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 22
+Info (12128): Elaborating entity "pos_edge_det" for hierarchy "detector:det|pos_edge_det:posedge_det" File: C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv Line: 30
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/adria/Documents/Feina/coincidence_detector/syn/output_files/detector_top.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/HP/Documents/Projectes/Coincidence_detector/syn/output_files/detector_top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 279 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 22 input pins
-    Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 233 logic cells
+Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
+    Info (21059): Implemented 60 output pins
+    Info (21061): Implemented 90 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4860 megabytes
-    Info: Processing ended: Wed May 08 00:07:09 2024
+    Info: Peak virtual memory: 4867 megabytes
+    Info: Processing ended: Wed May 08 17:03:17 2024
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:09
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/adria/Documents/Feina/coincidence_detector/syn/output_files/detector_top.map.smsg.
+The suppressed messages can be found in C:/Users/HP/Documents/Projectes/Coincidence_detector/syn/output_files/detector_top.map.smsg.
 
 
