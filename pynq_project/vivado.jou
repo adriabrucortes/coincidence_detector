@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun May 12 19:25:18 2024
+# Process ID: 25340
+# Current directory: C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32512 C:\Users\adria\Documents\Feina\coincidence_detector\pynq_project\detector.xpr
+# Log file: C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/vivado.log
+# Journal file: C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project\vivado.jou
+# Running On: Olawenah-PC, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34277 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_zynq_ultra_ps_e_0_0 design_1_rst_ps8_0_100M_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_zynq_ultra_ps_e_0_0 design_1_rst_ps8_0_100M_0}] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -delete_ip xilinx.com:user:detector_top:1.0 -repo_path c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+open_hw_manager
+set_property name axi_detector [ipx::current_core]
+set_property display_name axi_detector_v1.0 [ipx::current_core]
+set_property name AXI_detector [ipx::current_core]
+set_property display_name AXI_detector_v1.0 [ipx::current_core]
+set_property supported_families {zynquplus Beta} [ipx::current_core]
+set_property supported_families {zynquplus Pre-Production} [ipx::current_core]
+set_property ipi_drc {ignore_freq_hz true} [ipx::current_core]
+set_property ipi_drc {} [ipx::current_core]
+close_project
+startgroup
+set_property CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {0} [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+update_compile_order -fileset sources_1
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_clk0]
+update_compile_order -fileset sources_1
+undo
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+close_project
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_ip_instances -delete_project true
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+synth_design -top AXI_detector_v1_0 -part xczu3eg-sbva484-1-e -lint 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+synth_design -top AXI_detector_v1_0 -part xczu3eg-sbva484-1-e -lint 
+synth_design -top AXI_detector_v1_0 -part xczu3eg-sbva484-1-e -lint 
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+validate_bd_design -force
+save_bd_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+close_design
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd}
+validate_bd_design -force
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+synth_design -top AXI_detector_v1_0 -part xczu3eg-sbva484-1-e -lint 
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+synth_design -top AXI_detector_v1_0 -part xczu3eg-sbva484-1-e -lint 
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/sources_1/bd/design_1/design_1.bd}
+xhub::refresh_catalog [xhub::get_xstores xilinx_board_store]
+set_param board.repoPaths {C:/Users/adria/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store}
+xhub::install [xhub::get_xitems avnet.com:xilinx_board_store:Ultra96v1:1.2]
+close_project
+create_project project_2 C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_2 -part xczu3eg-sbva484-1-e
+set_property board_part avnet.com:ultra96v1:part0:1.2 [current_project]
+add_files -norecurse {C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector.sv C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/pos_edge_det.sv C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper_v.v C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top.sv C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/DelayGenerator.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v] -no_script -reset -force -quiet
+remove_files  C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v
+update_compile_order -fileset sources_1
+close_project
+create_project project_1 C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1 -part xczu3eg-sbva484-1-e
+set_property board_part avnet.com:ultra96v1:part0:1.2 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo [current_project]
+update_ip_catalog
+create_bd_cell -type ip -vlnv xilinx.com:user:AXI_detector:1.0 AXI_detector_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/AXI_detector_0/S00_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins AXI_detector_0/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_timer_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+endgroup
+startgroup
+create_bd_port -dir I -from 3 -to 0 Channels
+connect_bd_net [get_bd_pins /AXI_detector_0/Channels] [get_bd_ports Channels]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (100 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/AXI_detector_0/S00_AXI} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+regenerate_bd_layout
+generate_target all [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_AXI_detector_0_0_synth_1
+wait_on_run design_1_AXI_detector_0_0_synth_1
+launch_runs design_1_auto_ds_0_synth_1
+wait_on_run design_1_auto_ds_0_synth_1
+launch_runs design_1_auto_ds_1_synth_1
+wait_on_run design_1_auto_ds_1_synth_1
+launch_runs design_1_auto_pc_0_synth_1
+wait_on_run design_1_auto_pc_0_synth_1
+launch_runs design_1_auto_pc_1_synth_1
+wait_on_run design_1_auto_pc_1_synth_1
+launch_runs design_1_axi_timer_0_0_synth_1
+wait_on_run design_1_axi_timer_0_0_synth_1
+launch_runs design_1_rst_ps8_0_100M_0_synth_1
+wait_on_run design_1_rst_ps8_0_100M_0_synth_1
+launch_runs design_1_xbar_0_synth_1
+wait_on_run design_1_xbar_0_synth_1
+launch_runs design_1_zynq_ultra_ps_e_0_0_synth_1
+wait_on_run design_1_zynq_ultra_ps_e_0_0_synth_1
+synth_design -part xczu3eg-sbva484-1-e -lint 
+delete_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+set_property synth_checkpoint_mode None [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+make_wrapper -files [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse c:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+open_run synth_1 -name synth_1
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+set_property PULLTYPE NONE [get_ports [list {Channels[3]}]]
+set_property OFFCHIP_TERM NONE [get_ports [list {Channels[3]}]]
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+set_property package_pin "" [get_ports [list  {Channels[2]}]]
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+place_ports {Channels[3]} D1
+place_ports {Channels[3]} D2
+set_property package_pin "" [get_ports [list  {Channels[2]}]]
+set_property iostandard LVCMOS18 [get_ports [list {Channels[3]}]]
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+create_interface interface_1
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {Channels[3]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {Channels[3]} {Channels[2]} {Channels[1]} {Channels[0]}]]
+set_property IOSTANDARD ANALOG_SE [get_ports [list {Channels[3]} {Channels[2]} {Channels[1]} {Channels[0]}]]
+set_property package_pin "" [get_ports [list  {Channels[3]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {Channels[3]} {Channels[2]} {Channels[1]} {Channels[0]}]]
+place_ports {Channels[3]} G5
+place_ports {Channels[3]} D7
+place_ports {Channels[2]} F8
+place_ports {Channels[1]} E5
+place_ports {Channels[0]} D6
+file mkdir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/constrs_1/new
+close [ open C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/constrs_1/new/pins.xdc w ]
+add_files -fileset constrs_1 C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/constrs_1/new/pins.xdc
+set_property target_constrs_file C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/constrs_1/new/pins.xdc [current_fileset -constrset]
+save_constraints -force
+synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e -lint 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e -lint 
+current_design impl_1
+close_design
+close_design
+open_run synth_1 -name synth_1
+open_run impl_1
+file copy -force C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.runs/impl_1/design_1_wrapper.bit C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/coincidence_detector.bit
+file copy -force C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.runs/impl_1/design_1_wrapper.bit C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/coincidence_detector.bit
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes ports [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+open_bd_design {C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+set_property name Enable [ipx::get_registers slv_reg0 -of_objects [ipx::get_address_blocks S00_AXI_reg -of_objects [ipx::get_memory_maps S00_AXI -of_objects [ipx::current_core]]]]
+set_property display_name slv_reg0 [ipx::get_registers Enable -of_objects [ipx::get_address_blocks S00_AXI_reg -of_objects [ipx::get_memory_maps S00_AXI -of_objects [ipx::current_core]]]]
+set_property name nCycles [ipx::get_registers slv_reg1 -of_objects [ipx::get_address_blocks S00_AXI_reg -of_objects [ipx::get_memory_maps S00_AXI -of_objects [ipx::current_core]]]]
+set_property display_name slv_reg1 [ipx::get_registers nCycles -of_objects [ipx::get_address_blocks S00_AXI_reg -of_objects [ipx::get_memory_maps S00_AXI -of_objects [ipx::current_core]]]]
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+report_ip_status -name ip_status 
+file copy -force C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.runs/impl_1/design_1_wrapper.bit C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/coincidence_detector.bit
+ipx::edit_ip_in_project -upgrade true -name AXI_detector_v1_0_project -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.tmp/AXI_detector_v1_0_project c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/component.xml
+update_compile_order -fileset sources_1
+ipx::remove_register Enable [ipx::get_address_blocks S00_AXI_reg -of_objects [ipx::get_memory_maps S00_AXI -of_objects [ipx::current_core]]]
+ipx::remove_register nCycles [ipx::get_address_blocks S00_AXI_reg -of_objects [ipx::get_memory_maps S00_AXI -of_objects [ipx::current_core]]]
+set_property core_revision 7 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:AXI_detector:1.0 [get_ips  design_1_AXI_detector_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_AXI_detector_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files -ipstatic_source_dir C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/modelsim} {questa=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/questa} {riviera=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/riviera} {activehdl=C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+report_ip_status -name ip_status 
+file copy -force C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/project_1/project_1.runs/impl_1/design_1_wrapper.bit C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/coincidence_detector.bit

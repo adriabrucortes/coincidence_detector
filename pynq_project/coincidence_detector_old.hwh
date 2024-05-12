@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 12 13:49:11 2024" VIVADOVERSION="2023.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun May 12 22:03:44 2024" VIVADOVERSION="2023.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="avnet.com:ultra96v1:part0:1.2" DEVICE="xczu3eg" NAME="design_1" PACKAGE="sbva484" SPEEDGRADE="-1"/>
 
@@ -14,10 +14,132 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="2" FULLNAME="/AXI_detector_0" HWVERSION="1.0" INSTANCE="AXI_detector_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_detector" VLNV="xilinx.com:user:AXI_detector:1.0">
+    <MODULE COREREVISION="4" FULLNAME="/AXI_detector_0" HWVERSION="1.0" INSTANCE="AXI_detector_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_detector" VLNV="xilinx.com:user:AXI_detector:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register">
+          <REGISTERS>
+            <REGISTER NAME="slv_reg0">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x0"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg1">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x4"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg2">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x8"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg3">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0xc"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg4">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x10"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg5">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x14"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg6">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x18"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg7">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x1c"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg8">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x20"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg9">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x24"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg10">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x28"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg11">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x2c"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg12">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x30"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg13">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x34"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg14">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x38"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg15">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x3c"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+            <REGISTER NAME="slv_reg16">
+              <PROPERTY NAME="DESCRIPTION" VALUE=""/>
+              <PROPERTY NAME="ADDRESS_OFFSET" VALUE="0x40"/>
+              <PROPERTY NAME="SIZE" VALUE="32"/>
+              <PROPERTY NAME="ACCESS" VALUE=""/>
+              <PROPERTY NAME="IS_ENABLED" VALUE="true"/>
+            </REGISTER>
+          </REGISTERS>
+        </ADDRESSBLOCK>
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="7"/>

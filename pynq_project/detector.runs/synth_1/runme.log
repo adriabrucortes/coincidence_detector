@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log detector_top_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source detector_top_v1_0.tcl
+    with args -log AXI_detector_v1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_detector_v1_0.tcl
 
 
 
@@ -11,17 +11,17 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source detector_top_v1_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 553.227 ; gain = 180.328
+source AXI_detector_v1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 566.145 ; gain = 183.039
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/adria/Documents/Feina/coincidence_detector/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
-Current IP cache path is c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.cache/ip 
-Command: read_checkpoint -auto_incremental -incremental C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.srcs/utils_1/imports/synth_1/detector_top_v1_0.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.srcs/utils_1/imports/synth_1/detector_top_v1_0.dcp for incremental synthesis
+Current IP cache path is c:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/utils_1/imports/synth_1/detector_top_v1_0.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.srcs/utils_1/imports/synth_1/detector_top_v1_0.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top detector_top_v1_0 -part xczu3eg-sbva484-1-e
+Command: synth_design -top AXI_detector_v1_0 -part xczu3eg-sbva484-1-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
@@ -29,70 +29,205 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2344
+INFO: [Synth 8-7075] Helper process launched with PID 45924
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1012.211 ; gain = 438.191
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1022.934 ; gain = 437.816
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'detector_top_v1_0_M00_AXIS' with formal parameter declaration list [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_M00_AXIS.v:58]
-WARNING: [Synth 8-11065] parameter 'INIT_COUNTER' becomes localparam in 'detector_top_v1_0_M00_AXIS' with formal parameter declaration list [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_M00_AXIS.v:60]
-WARNING: [Synth 8-11065] parameter 'SEND_STREAM' becomes localparam in 'detector_top_v1_0_M00_AXIS' with formal parameter declaration list [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_M00_AXIS.v:63]
-WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'detector_top_v1_0_S00_AXIS' with formal parameter declaration list [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_S00_AXIS.v:51]
-WARNING: [Synth 8-11065] parameter 'WRITE_FIFO' becomes localparam in 'detector_top_v1_0_S00_AXIS' with formal parameter declaration list [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_S00_AXIS.v:53]
-INFO: [Synth 8-6157] synthesizing module 'detector_top_v1_0' [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0.v:4]
-INFO: [Synth 8-6157] synthesizing module 'detector_top_v1_0_S00_AXIS' [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_S00_AXIS.v:4]
-	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'detector_top_v1_0_S00_AXIS' (0#1) [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_S00_AXIS.v:4]
-INFO: [Synth 8-6157] synthesizing module 'detector_top_v1_0_M00_AXIS' [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_M00_AXIS.v:4]
-	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_M00_AXIS.v:106]
-INFO: [Synth 8-6155] done synthesizing module 'detector_top_v1_0_M00_AXIS' (0#1) [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0_M00_AXIS.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'detector_top_v1_0' (0#1) [C:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo/detector_top_1_0/hdl/detector_top_v1_0.v:4]
-WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[0].stream_data_fifo_reg was removed. 
-WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[1].stream_data_fifo_reg was removed. 
-WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[2].stream_data_fifo_reg was removed. 
-WARNING: [Synth 8-6014] Unused sequential element FIFO_GEN[3].stream_data_fifo_reg was removed. 
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[31] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[30] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[29] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[28] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[27] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[26] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[25] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[24] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[23] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[22] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[21] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[20] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[19] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[18] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[17] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[16] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[15] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[14] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[13] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[12] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[11] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[10] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[9] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[8] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[7] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[6] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[5] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[4] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[3] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[2] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[1] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TDATA[0] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[3] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[2] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[1] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXIS_TSTRB[0] in module detector_top_v1_0_S00_AXIS is either unconnected or has no load
+INFO: [Synth 8-11241] undeclared symbol 'Enable', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:72]
+INFO: [Synth 8-11241] undeclared symbol 'nCycles', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:73]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_A', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:74]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_B', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:75]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_C', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:76]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_D', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:77]
+INFO: [Synth 8-11241] undeclared symbol 'Cnt_Clk', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:78]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_A', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:79]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_B', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:80]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_C', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:81]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_D', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:82]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_AB', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:83]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_AC', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:84]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_AD', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:85]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_BC', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:86]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_BD', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:87]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_CD', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:88]
+WARNING: [Synth 8-8895] 'Enable' is already implicitly declared on line 72 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:93]
+WARNING: [Synth 8-8895] 'nCycles' is already implicitly declared on line 73 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:94]
+WARNING: [Synth 8-8895] 'Delay_A' is already implicitly declared on line 74 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:95]
+WARNING: [Synth 8-8895] 'Delay_B' is already implicitly declared on line 75 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:95]
+WARNING: [Synth 8-8895] 'Delay_C' is already implicitly declared on line 76 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:95]
+WARNING: [Synth 8-8895] 'Delay_D' is already implicitly declared on line 77 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:95]
+WARNING: [Synth 8-8895] 'Cnt_Clk' is already implicitly declared on line 78 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:97]
+WARNING: [Synth 8-8895] 'Counts_A' is already implicitly declared on line 79 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:98]
+WARNING: [Synth 8-8895] 'Counts_B' is already implicitly declared on line 80 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:98]
+WARNING: [Synth 8-8895] 'Counts_C' is already implicitly declared on line 81 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:98]
+WARNING: [Synth 8-8895] 'Counts_D' is already implicitly declared on line 82 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:98]
+WARNING: [Synth 8-8895] 'Counts_AB' is already implicitly declared on line 83 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:99]
+WARNING: [Synth 8-8895] 'Counts_AC' is already implicitly declared on line 84 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:99]
+WARNING: [Synth 8-8895] 'Counts_AD' is already implicitly declared on line 85 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:99]
+WARNING: [Synth 8-8895] 'Counts_BC' is already implicitly declared on line 86 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:99]
+WARNING: [Synth 8-8895] 'Counts_BD' is already implicitly declared on line 87 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:99]
+WARNING: [Synth 8-8895] 'Counts_CD' is already implicitly declared on line 88 [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:99]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_ACLK', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:107]
+INFO: [Synth 8-11241] undeclared symbol 'S_AXI_ARESETN', assumed default net type 'wire' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:108]
+INFO: [Synth 8-6157] synthesizing module 'AXI_detector_v1_0' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'AXI_detector_v1_0_S00_AXI' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI_detector_v1_0_S00_AXI' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'detector_top_wrapper_v' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper_v.v:1]
+	Parameter NCHAN bound to: 4 - type: integer 
+	Parameter NBITS bound to: 32 - type: integer 
+	Parameter NREGS bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'detector_top_wrapper_sv' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:1]
+	Parameter NCHAN bound to: 4 - type: integer 
+	Parameter NBITS bound to: 32 - type: integer 
+	Parameter NREGS bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'detector_top' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top.sv:1]
+	Parameter NCHAN bound to: 4 - type: integer 
+	Parameter NBITS bound to: 32 - type: integer 
+	Parameter NREGS bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'detector' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector.sv:1]
+	Parameter NCHAN bound to: 4 - type: integer 
+	Parameter NBITS bound to: 32 - type: integer 
+	Parameter NREGS bound to: 1024 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'DelayGenerator' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/DelayGenerator.sv:1]
+	Parameter NCHAN bound to: 4 - type: integer 
+	Parameter NBITS bound to: 32 - type: integer 
+	Parameter NREGS bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DelayGenerator' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/DelayGenerator.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'pos_edge_det' [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/pos_edge_det.sv:1]
+	Parameter NCHAN bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'pos_edge_det' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/pos_edge_det.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector_top' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector_top_wrapper_sv' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector_top_wrapper_v' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper_v.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'AXI_detector_v1_0' (0#1) [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:4]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:247]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:248]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:249]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:250]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:251]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0_S00_AXI.v:252]
+WARNING: [Synth 8-7137] Register DlayChann_reg in module DelayGenerator has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/DelayGenerator.sv:21]
+WARNING: [Synth 8-6014] Unused sequential element iCnt_pairs_reg was removed.  [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector.sv:75]
+WARNING: [Synth 8-3848] Net Counts_A in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:11]
+WARNING: [Synth 8-3848] Net Counts_B in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:12]
+WARNING: [Synth 8-3848] Net Counts_C in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:13]
+WARNING: [Synth 8-3848] Net Counts_D in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:14]
+WARNING: [Synth 8-3848] Net Counts_AB in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:15]
+WARNING: [Synth 8-3848] Net Counts_AC in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:16]
+WARNING: [Synth 8-3848] Net Counts_AD in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:17]
+WARNING: [Synth 8-3848] Net Counts_BC in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:18]
+WARNING: [Synth 8-3848] Net Counts_BD in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:19]
+WARNING: [Synth 8-3848] Net Counts_CD in module/entity detector_top_wrapper_sv does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/src/detector_top_wrapper.sv:20]
+WARNING: [Synth 8-3848] Net Enable in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:72]
+WARNING: [Synth 8-3848] Net nCycles in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:73]
+WARNING: [Synth 8-3848] Net Delay_A in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:74]
+WARNING: [Synth 8-3848] Net Delay_B in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:75]
+WARNING: [Synth 8-3848] Net Delay_C in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:76]
+WARNING: [Synth 8-3848] Net Delay_D in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:77]
+WARNING: [Synth 8-3848] Net S_AXI_ACLK in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:107]
+WARNING: [Synth 8-3848] Net S_AXI_ARESETN in module/entity AXI_detector_v1_0 does not have driver. [C:/Users/adria/Documents/Feina/coincidence_detector/ip_repo/AXI_detector_1_0/hdl/AXI_detector_v1_0.v:108]
+WARNING: [Synth 8-7129] Port Delays[3][31] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][30] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][29] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][28] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][27] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][26] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][25] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][24] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][23] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][22] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][21] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][20] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][19] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][18] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][17] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][16] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][15] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][14] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][13] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][12] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][11] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][10] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][31] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][30] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][29] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][28] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][27] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][26] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][25] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][24] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][23] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][22] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][21] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][20] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][19] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][18] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][17] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][16] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][15] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][14] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][13] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][12] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][11] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[2][10] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][31] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][30] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][29] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][28] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][27] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][26] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][25] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][24] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][23] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][22] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][21] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][20] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][19] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][18] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][17] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][16] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][15] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][14] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][13] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][12] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][11] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[1][10] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][31] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][30] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][29] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][28] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][27] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][26] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][25] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][24] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][23] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][22] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][21] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][20] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][19] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][18] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][17] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][16] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][15] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][14] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][13] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][12] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][11] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[0][10] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module AXI_detector_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module AXI_detector_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module AXI_detector_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module AXI_detector_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module AXI_detector_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module AXI_detector_v1_0_S00_AXI is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1120.371 ; gain = 546.352
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1142.031 ; gain = 556.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1120.371 ; gain = 546.352
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1142.031 ; gain = 556.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -100,41 +235,28 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1142.031 ; gain = 556.914
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1120.371 ; gain = 546.352
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'mst_exec_state_reg' in module 'detector_top_v1_0_M00_AXIS'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                               00 |                               00
-            INIT_COUNTER |                               01 |                               01
-             SEND_STREAM |                               10 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mst_exec_state_reg' using encoding 'sequential' in module 'detector_top_v1_0_M00_AXIS'
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 1120.371 ; gain = 546.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1142.031 ; gain = 556.914
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input    5 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 2     
-	   2 Input    3 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 5     
+	             1024 Bit    Registers := 4     
+	               32 Bit    Registers := 15    
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	   3 Input    2 Bit        Muxes := 1     
-	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 6     
-	   3 Input    1 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 14    
+	  21 Input   32 Bit        Muxes := 14    
+	   2 Input    1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -152,61 +274,28 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3917] design detector_top_v1_0 has port m00_axis_tstrb[3] driven by constant 1
-WARNING: [Synth 8-3917] design detector_top_v1_0 has port m00_axis_tstrb[2] driven by constant 1
-WARNING: [Synth 8-3917] design detector_top_v1_0 has port m00_axis_tstrb[1] driven by constant 1
-WARNING: [Synth 8-3917] design detector_top_v1_0 has port m00_axis_tstrb[0] driven by constant 1
-WARNING: [Synth 8-7129] Port s00_axis_tdata[31] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[30] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[29] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[28] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[27] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[26] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[25] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[24] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[23] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[22] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[21] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[20] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[19] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[18] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[17] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[16] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[15] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[14] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[13] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[12] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[11] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[10] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[9] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[8] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[7] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[6] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[5] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[4] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[3] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[2] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[1] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tdata[0] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tstrb[3] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tstrb[2] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tstrb[1] in module detector_top_v1_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s00_axis_tstrb[0] in module detector_top_v1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][31] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][30] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][29] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][28] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][27] in module DelayGenerator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Delays[3][26] in module DelayGenerator is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:32 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:33 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:33 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -224,37 +313,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -267,55 +356,55 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     2|
-|2     |LUT1 |     5|
-|3     |LUT2 |     5|
-|4     |LUT3 |     7|
-|5     |LUT4 |     6|
-|6     |LUT5 |     3|
-|7     |LUT6 |     2|
-|8     |FDRE |    22|
-|9     |FDSE |     1|
-|10    |IBUF |     7|
-|11    |OBUF |    39|
-+------+-----+------+
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |     1|
+|4     |LUT3  |     1|
+|5     |LUT4  |     3|
+|6     |LUT5  |    81|
+|7     |LUT6  |   140|
+|8     |MUXF7 |    32|
+|9     |FDRE  |   495|
+|10    |FDSE  |     1|
+|11    |IBUF  |    53|
+|12    |OBUF  |    41|
++------+------+------+
 
 Report Instance Areas: 
-+------+----------------------------------+---------------------------+------+
-|      |Instance                          |Module                     |Cells |
-+------+----------------------------------+---------------------------+------+
-|1     |top                               |                           |    99|
-|2     |  detector_top_v1_0_M00_AXIS_inst |detector_top_v1_0_M00_AXIS |    39|
-|3     |  detector_top_v1_0_S00_AXIS_inst |detector_top_v1_0_S00_AXIS |    12|
-+------+----------------------------------+---------------------------+------+
++------+---------------------------------+--------------------------+------+
+|      |Instance                         |Module                    |Cells |
++------+---------------------------------+--------------------------+------+
+|1     |top                              |                          |   850|
+|2     |  AXI_detector_v1_0_S00_AXI_inst |AXI_detector_v1_0_S00_AXI |   755|
++------+---------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 86 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:39 . Memory (MB): peak = 1832.246 ; gain = 1258.227
+Synthesis finished with 0 errors, 0 critical warnings and 232 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1853.051 ; gain = 1267.934
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1832.246 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1853.051 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1886.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1907.672 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 9 instances were transformed.
-  BUFG => BUFGCE: 2 instances
-  IBUF => IBUF (IBUFCTRL, INBUF): 7 instances
+  A total of 54 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 53 instances
 
 El sistema no puede encontrar la ruta especificada.
-Synth Design complete | Checksum: 2c7ee6f7
+Synth Design complete | Checksum: 74ff6966
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 87 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 145 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:43 . Memory (MB): peak = 1886.723 ; gain = 1312.703
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1886.723 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.runs/synth_1/detector_top_v1_0.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file detector_top_v1_0_utilization_synth.rpt -pb detector_top_v1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 12 15:21:43 2024...
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1907.672 ; gain = 1322.555
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1907.672 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.runs/synth_1/AXI_detector_v1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file AXI_detector_v1_0_utilization_synth.rpt -pb AXI_detector_v1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 12 21:33:25 2024...

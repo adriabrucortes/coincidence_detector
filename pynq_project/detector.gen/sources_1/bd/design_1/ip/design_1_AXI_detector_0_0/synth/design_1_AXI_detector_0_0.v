@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:AXI_detector:1.0
-// IP Revision: 3
+// IP Revision: 4
 
 (* X_CORE_INFO = "AXI_detector_v1_0,Vivado 2023.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_AXI_detector_0_0,AXI_detector_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "design_1_AXI_detector_0_0,AXI_detector_v1_0,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_detector,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}" *)
+(* CORE_GENERATION_INFO = "design_1_AXI_detector_0_0,AXI_detector_v1_0,{x_ipProduct=Vivado 2023.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_detector,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_AXI_detector_0_0 (
   s00_axi_aclk,

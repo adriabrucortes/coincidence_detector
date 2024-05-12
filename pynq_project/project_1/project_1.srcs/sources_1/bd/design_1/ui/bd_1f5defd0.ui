@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.754552",
+   "Default View_TopLeft":"-135,-134",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace portBus Channels -pg 1 -lvl 0 -x 0 -y 550 -defaultsOSRD
+preplace inst AXI_detector_0 -pg 1 -lvl 3 -x 1110 -y 520 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 310 -y 90 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 3 -x 1110 -y 230 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 790 -y 170 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 2 -x 790 -y 450 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 20 180 610 350 990
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 600 100n
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 2 620 340 970
+preplace netloc Channels_1 1 0 3 NJ 550 NJ 550 960J
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 60
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 980 160n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 N 180
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 80
+levelinfo -pg 1 0 310 790 1110 1230
+pagesize -pg 1 -db -bbox -sgen -140 0 1230 610
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

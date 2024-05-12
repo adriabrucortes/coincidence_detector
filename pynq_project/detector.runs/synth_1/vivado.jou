@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Sun May 12 15:20:40 2024
-# Process ID: 17828
-# Current directory: C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.runs/synth_1
-# Command line: vivado.exe -log detector_top_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source detector_top_v1_0.tcl
-# Log file: C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.runs/synth_1/detector_top_v1_0.vds
-# Journal file: C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/detector.runs/synth_1\vivado.jou
-# Running On: Elitebook-QCommsUB-Adria, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 33974 MB
+# Start of session at: Sun May 12 21:32:48 2024
+# Process ID: 34396
+# Current directory: C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.runs/synth_1
+# Command line: vivado.exe -log AXI_detector_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AXI_detector_v1_0.tcl
+# Log file: C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.runs/synth_1/AXI_detector_v1_0.vds
+# Journal file: C:/Users/adria/Documents/Feina/coincidence_detector/pynq_project/detector.runs/synth_1\vivado.jou
+# Running On: Olawenah-PC, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 8, Host memory: 34277 MB
 #-----------------------------------------------------------
-source detector_top_v1_0.tcl -notrace
+source AXI_detector_v1_0.tcl -notrace

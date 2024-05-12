@@ -4,7 +4,7 @@
     "xci_name": "design_1_AXI_detector_0_0",
     "cell_name": "AXI_detector_0",
     "component_reference": "xilinx.com:user:AXI_detector:1.0",
-    "ip_revision": "3",
+    "ip_revision": "4",
     "gen_directory": "../../../../../../detector.gen/sources_1/bd/design_1/ip/design_1_AXI_detector_0_0",
     "parameters": {
       "component_parameters": {
@@ -20,7 +20,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynquplus" } ],
-        "BASE_BOARD_PART": [ { "value": "avnet.com:ultra96v1:part0:1.2" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xczu3eg" } ],
         "PACKAGE": [ { "value": "sbva484" } ],
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "4" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../detector.gen/sources_1/bd/design_1/ip/design_1_AXI_detector_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
