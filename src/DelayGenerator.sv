@@ -1,4 +1,4 @@
-module DelayGenerator #(parameter NCHAN = 4, NBITS = 4, NREGS = 2) (
+module DelayGenerator #(parameter NCHAN = 4, NBITS = 1024, NREGS = 10) (
 	input wire              Clk, Rst_n,
     input wire [NCHAN-1:0]  Channels,
     input wire [NBITS-1:0]  Delays [NCHAN-1:0], // 2^NBITS >= NREGS
@@ -13,6 +13,7 @@ always @(posedge Clk or negedge Rst_n) begin
     if (!Rst_n) begin
         for (int i = 0; i < NCHAN; i++) 
             delayRegs[i] <= {NREGS{1'b0}};
+            DlayChann[i] <= {NREGS{1'b0}};
 
     end else begin
         for (int i = 0; i < NCHAN; i++) begin  // Put regs for every channel
@@ -21,6 +22,9 @@ always @(posedge Clk or negedge Rst_n) begin
             DlayChann[i] <= delayRegs[i][Delays[i]]; // Output
 
         end
+    end else begin
+        delayRegs <= delayRegs;
+        DlayChann <= DlayChann;
     end
 end
 
