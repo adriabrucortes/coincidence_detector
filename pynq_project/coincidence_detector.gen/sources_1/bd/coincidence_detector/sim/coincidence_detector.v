@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Mon May 13 16:29:47 2024
+//Date        : Wed May 15 09:25:42 2024
 //Host        : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
 //Command     : generate_target coincidence_detector.bd
 //Design      : coincidence_detector

@@ -1525,7 +1525,7 @@
       },
       "axilite_detector_0": {
         "vlnv": "xilinx.com:user:axilite_detector:1.0",
-        "ip_revision": "4",
+        "ip_revision": "5",
         "xci_name": "coincidence_detector_axilite_detector_0_0",
         "xci_path": "ip\\coincidence_detector_axilite_detector_0_0\\coincidence_detector_axilite_detector_0_0.xci",
         "inst_hier_path": "axilite_detector_0"

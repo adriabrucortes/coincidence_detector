@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon May 13 16:30:33 2024
-# Process ID: 17412
+# Start of session at: Wed May 15 09:26:21 2024
+# Process ID: 3916
 # Current directory: C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.runs/synth_1
 # Command line: vivado.exe -log coincidence_detector_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source coincidence_detector_wrapper.tcl
 # Log file: C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.runs/synth_1/coincidence_detector_wrapper.vds
@@ -12,13 +12,12 @@
 # Running On: Elitebook-QCommsUB-Adria, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 33974 MB
 #-----------------------------------------------------------
 source coincidence_detector_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 554.562 ; gain = 182.141
+create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 555.449 ; gain = 182.375
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/HP/Documents/Projectes/Coincidence_detector/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.cache/ip 
-add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 615.344 ; gain = 41.043
 Command: read_checkpoint -auto_incremental -incremental C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.srcs/utils_1/imports/synth_1/coincidence_detector_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.srcs/utils_1/imports/synth_1/coincidence_detector_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -31,63 +30,63 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 5628
+INFO: [Synth 8-7075] Helper process launched with PID 6888
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1906.848 ; gain = 377.297
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1907.270 ; gain = 377.066
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_5_1.v:2463]
-INFO: [Synth 8-11241] undeclared symbol 'Restart_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:72]
-INFO: [Synth 8-11241] undeclared symbol 'Enable_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:73]
-INFO: [Synth 8-11241] undeclared symbol 'nCycles_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:74]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_A_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:75]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_B_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:76]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_C_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:77]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_D_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:78]
-INFO: [Synth 8-11241] undeclared symbol 'Restart_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:79]
-INFO: [Synth 8-11241] undeclared symbol 'Enable_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:80]
-INFO: [Synth 8-11241] undeclared symbol 'nCycles_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:81]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_A_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:82]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_B_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:83]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_C_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:84]
-INFO: [Synth 8-11241] undeclared symbol 'Delay_D_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:85]
-INFO: [Synth 8-11241] undeclared symbol 'Cnt_Clk', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:86]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_A', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:87]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_B', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:88]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_C', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:89]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_D', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:90]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_AB', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:91]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_AC', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:92]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_AD', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:93]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_BC', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:94]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_BD', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:95]
-INFO: [Synth 8-11241] undeclared symbol 'Counts_CD', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:96]
-WARNING: [Synth 8-8895] 'Restart_i' is already implicitly declared on line 72 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:101]
-WARNING: [Synth 8-8895] 'Enable_i' is already implicitly declared on line 73 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:102]
-WARNING: [Synth 8-8895] 'nCycles_i' is already implicitly declared on line 74 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:103]
-WARNING: [Synth 8-8895] 'Delay_A_i' is already implicitly declared on line 75 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:104]
-WARNING: [Synth 8-8895] 'Delay_B_i' is already implicitly declared on line 76 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:104]
-WARNING: [Synth 8-8895] 'Delay_C_i' is already implicitly declared on line 77 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:104]
-WARNING: [Synth 8-8895] 'Delay_D_i' is already implicitly declared on line 78 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:104]
-WARNING: [Synth 8-8895] 'Restart_o' is already implicitly declared on line 79 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:106]
-WARNING: [Synth 8-8895] 'Enable_o' is already implicitly declared on line 80 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:107]
-WARNING: [Synth 8-8895] 'nCycles_o' is already implicitly declared on line 81 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:108]
-WARNING: [Synth 8-8895] 'Delay_A_o' is already implicitly declared on line 82 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:109]
-WARNING: [Synth 8-8895] 'Delay_B_o' is already implicitly declared on line 83 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:109]
-WARNING: [Synth 8-8895] 'Delay_C_o' is already implicitly declared on line 84 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:109]
-WARNING: [Synth 8-8895] 'Delay_D_o' is already implicitly declared on line 85 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:109]
-WARNING: [Synth 8-8895] 'Cnt_Clk' is already implicitly declared on line 86 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:111]
-WARNING: [Synth 8-8895] 'Counts_A' is already implicitly declared on line 87 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:112]
-WARNING: [Synth 8-8895] 'Counts_B' is already implicitly declared on line 88 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:112]
-WARNING: [Synth 8-8895] 'Counts_C' is already implicitly declared on line 89 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:112]
-WARNING: [Synth 8-8895] 'Counts_D' is already implicitly declared on line 90 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:112]
-WARNING: [Synth 8-8895] 'Counts_AB' is already implicitly declared on line 91 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:113]
-WARNING: [Synth 8-8895] 'Counts_AC' is already implicitly declared on line 92 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:113]
-WARNING: [Synth 8-8895] 'Counts_AD' is already implicitly declared on line 93 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:113]
-WARNING: [Synth 8-8895] 'Counts_BC' is already implicitly declared on line 94 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:113]
-WARNING: [Synth 8-8895] 'Counts_BD' is already implicitly declared on line 95 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:113]
-WARNING: [Synth 8-8895] 'Counts_CD' is already implicitly declared on line 96 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:113]
-INFO: [Synth 8-6157] synthesizing module 'coincidence_detector_wrapper' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v:13]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v:19]
+INFO: [Synth 8-11241] undeclared symbol 'Restart_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:72]
+INFO: [Synth 8-11241] undeclared symbol 'Enable_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:73]
+INFO: [Synth 8-11241] undeclared symbol 'nCycles_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:74]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_A_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:75]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_B_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:76]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_C_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:77]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_D_i', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:78]
+INFO: [Synth 8-11241] undeclared symbol 'Restart_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:79]
+INFO: [Synth 8-11241] undeclared symbol 'Enable_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:80]
+INFO: [Synth 8-11241] undeclared symbol 'nCycles_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:81]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_A_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:82]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_B_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:83]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_C_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:84]
+INFO: [Synth 8-11241] undeclared symbol 'Delay_D_o', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:85]
+INFO: [Synth 8-11241] undeclared symbol 'Cnt_Clk', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:86]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_A', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:87]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_B', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:88]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_C', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:89]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_D', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:90]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_AB', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:91]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_AC', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:92]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_AD', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:93]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_BC', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:94]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_BD', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:95]
+INFO: [Synth 8-11241] undeclared symbol 'Counts_CD', assumed default net type 'wire' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:96]
+WARNING: [Synth 8-8895] 'Restart_i' is already implicitly declared on line 72 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:101]
+WARNING: [Synth 8-8895] 'Enable_i' is already implicitly declared on line 73 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:102]
+WARNING: [Synth 8-8895] 'nCycles_i' is already implicitly declared on line 74 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:103]
+WARNING: [Synth 8-8895] 'Delay_A_i' is already implicitly declared on line 75 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:104]
+WARNING: [Synth 8-8895] 'Delay_B_i' is already implicitly declared on line 76 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:104]
+WARNING: [Synth 8-8895] 'Delay_C_i' is already implicitly declared on line 77 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:104]
+WARNING: [Synth 8-8895] 'Delay_D_i' is already implicitly declared on line 78 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:104]
+WARNING: [Synth 8-8895] 'Restart_o' is already implicitly declared on line 79 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:106]
+WARNING: [Synth 8-8895] 'Enable_o' is already implicitly declared on line 80 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:107]
+WARNING: [Synth 8-8895] 'nCycles_o' is already implicitly declared on line 81 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:108]
+WARNING: [Synth 8-8895] 'Delay_A_o' is already implicitly declared on line 82 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:109]
+WARNING: [Synth 8-8895] 'Delay_B_o' is already implicitly declared on line 83 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:109]
+WARNING: [Synth 8-8895] 'Delay_C_o' is already implicitly declared on line 84 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:109]
+WARNING: [Synth 8-8895] 'Delay_D_o' is already implicitly declared on line 85 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:109]
+WARNING: [Synth 8-8895] 'Cnt_Clk' is already implicitly declared on line 86 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:111]
+WARNING: [Synth 8-8895] 'Counts_A' is already implicitly declared on line 87 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:112]
+WARNING: [Synth 8-8895] 'Counts_B' is already implicitly declared on line 88 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:112]
+WARNING: [Synth 8-8895] 'Counts_C' is already implicitly declared on line 89 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:112]
+WARNING: [Synth 8-8895] 'Counts_D' is already implicitly declared on line 90 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:112]
+WARNING: [Synth 8-8895] 'Counts_AB' is already implicitly declared on line 91 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:113]
+WARNING: [Synth 8-8895] 'Counts_AC' is already implicitly declared on line 92 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:113]
+WARNING: [Synth 8-8895] 'Counts_AD' is already implicitly declared on line 93 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:113]
+WARNING: [Synth 8-8895] 'Counts_BC' is already implicitly declared on line 94 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:113]
+WARNING: [Synth 8-8895] 'Counts_BD' is already implicitly declared on line 95 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:113]
+WARNING: [Synth 8-8895] 'Counts_CD' is already implicitly declared on line 96 [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:113]
+INFO: [Synth 8-6157] synthesizing module 'coincidence_detector_wrapper' [C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v:13]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v:19]
 INFO: [Synth 8-6157] synthesizing module 'coincidence_detector' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:13]
 INFO: [Synth 8-638] synthesizing module 'coincidence_detector_axi_timer_0_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axi_timer_0_0/synth/coincidence_detector_axi_timer_0_0.vhd:90]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
@@ -280,20 +279,20 @@ WARNING: [Synth 8-7071] port 'pwm0' of module 'coincidence_detector_axi_timer_0_
 WARNING: [Synth 8-7071] port 'interrupt' of module 'coincidence_detector_axi_timer_0_0' is unconnected for instance 'axi_timer_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:134]
 WARNING: [Synth 8-7023] instance 'axi_timer_0' of module 'coincidence_detector_axi_timer_0_0' has 26 connections declared, but only 22 given [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:134]
 INFO: [Synth 8-6157] synthesizing module 'coincidence_detector_axilite_detector_0_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0/synth/coincidence_detector_axilite_detector_0_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'axilite_detector_v1_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:4]
-INFO: [Synth 8-6157] synthesizing module 'axilite_detector_v1_0_S00_AXI' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'axilite_detector_v1_0_S00_AXI' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:4]
-INFO: [Synth 8-6157] synthesizing module 'detector_top_wrapper_v' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper_v.v:1]
-INFO: [Synth 8-6157] synthesizing module 'detector_top_wrapper_sv' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'detector' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'DelayGenerator' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/DelayGenerator.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'DelayGenerator' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/DelayGenerator.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'pos_edge_det' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/pos_edge_det.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'pos_edge_det' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/pos_edge_det.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'detector' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'detector_top_wrapper_sv' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'detector_top_wrapper_v' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper_v.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'axilite_detector_v1_0' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'axilite_detector_v1_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'axilite_detector_v1_0_S00_AXI' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'axilite_detector_v1_0_S00_AXI' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'detector_top_wrapper_v' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper_v.v:1]
+INFO: [Synth 8-6157] synthesizing module 'detector_top_wrapper_sv' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'detector' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'DelayGenerator' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/DelayGenerator.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'DelayGenerator' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/DelayGenerator.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'pos_edge_det' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/pos_edge_det.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'pos_edge_det' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/pos_edge_det.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector_top_wrapper_sv' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'detector_top_wrapper_v' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper_v.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'axilite_detector_v1_0' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'coincidence_detector_axilite_detector_0_0' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0/synth/coincidence_detector_axilite_detector_0_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'coincidence_detector_ps8_0_axi_periph_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:390]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_62KI6L' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:1180]
@@ -571,33 +570,19 @@ WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'coincidence_detector_zy
 WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'coincidence_detector_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:308]
 WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'coincidence_detector_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 79 given [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:308]
 INFO: [Synth 8-6155] done synthesizing module 'coincidence_detector' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/synth/coincidence_detector.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'coincidence_detector_wrapper' (0#1) [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v:13]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:260]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:261]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:262]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:263]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:264]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg12_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:265]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg13_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:266]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg14_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:267]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg15_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:268]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg16_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:269]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg17_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v:270]
-WARNING: [Synth 8-6014] Unused sequential element iCnt_pairs_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector.sv:95]
-WARNING: [Synth 8-3848] Net Delay_A_o in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:17]
-WARNING: [Synth 8-3848] Net Delay_B_o in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:18]
-WARNING: [Synth 8-3848] Net Delay_C_o in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:19]
-WARNING: [Synth 8-3848] Net Delay_D_o in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:20]
-WARNING: [Synth 8-3848] Net Counts_A in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:23]
-WARNING: [Synth 8-3848] Net Counts_B in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:24]
-WARNING: [Synth 8-3848] Net Counts_C in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:25]
-WARNING: [Synth 8-3848] Net Counts_D in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:26]
-WARNING: [Synth 8-3848] Net Counts_AB in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:27]
-WARNING: [Synth 8-3848] Net Counts_AC in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:28]
-WARNING: [Synth 8-3848] Net Counts_AD in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:29]
-WARNING: [Synth 8-3848] Net Counts_BC in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:30]
-WARNING: [Synth 8-3848] Net Counts_BD in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:31]
-WARNING: [Synth 8-3848] Net Counts_CD in module/entity detector_top_wrapper_sv does not have driver. [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'coincidence_detector_wrapper' (0#1) [C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v:13]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:260]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:261]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:262]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:263]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:264]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg12_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:265]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg13_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:266]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg14_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:267]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg15_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:268]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg16_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:269]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg17_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v:270]
+WARNING: [Synth 8-6014] Unused sequential element iCnt_pairs_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2f8b/src/detector.sv:95]
 WARNING: [Synth 8-6014] Unused sequential element cmd_empty_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/670d/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1052]
 WARNING: [Synth 8-6014] Unused sequential element cmd_depth_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/670d/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1053]
 WARNING: [Synth 8-6014] Unused sequential element cmd_b_push_block_reg was removed.  [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/670d/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:975]
@@ -714,18 +699,18 @@ WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_5_1_zy
 WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_5_1_zynq_ultra_ps_e is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 2225.566 ; gain = 696.016
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2226.152 ; gain = 695.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:56 . Memory (MB): peak = 2225.566 ; gain = 696.016
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2226.152 ; gain = 695.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:56 . Memory (MB): peak = 2225.566 ; gain = 696.016
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2226.152 ; gain = 695.949
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2231.688 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 2235.125 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 121 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -733,7 +718,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_zynq_ultra_ps_e_0_0/coincidence_detector_zynq_ultra_ps_e_0_0.xdc] for cell 'coincidence_detector_i/zynq_ultra_ps_e_0/inst'
-create_clock: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2347.164 ; gain = 18.402
 Finished Parsing XDC File [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_zynq_ultra_ps_e_0_0/coincidence_detector_zynq_ultra_ps_e_0_0.xdc] for cell 'coincidence_detector_i/zynq_ultra_ps_e_0/inst'
 Parsing XDC File [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axi_timer_0_0/coincidence_detector_axi_timer_0_0.xdc] for cell 'coincidence_detector_i/axi_timer_0/U0'
 Finished Parsing XDC File [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axi_timer_0_0/coincidence_detector_axi_timer_0_0.xdc] for cell 'coincidence_detector_i/axi_timer_0/U0'
@@ -754,7 +738,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/coincidence_
 INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2347.164 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2348.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 57 instances were transformed.
   FDR => FDRE: 30 instances
@@ -762,11 +746,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDRSE => FDRSE (FDRE, LUT4, VCC): 25 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 2347.164 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 2348.656 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:55 ; elapsed = 00:01:45 . Memory (MB): peak = 2347.164 ; gain = 817.613
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 2348.656 ; gain = 818.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -774,7 +758,7 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:55 ; elapsed = 00:01:45 . Memory (MB): peak = 2347.164 ; gain = 817.613
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 2348.656 ; gain = 818.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -803,7 +787,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for coincidence_detector_i/ps8_0_axi_
 Applied set_property KEEP_HIERARCHY = SOFT for coincidence_detector_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for coincidence_detector_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_READ.read_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:45 . Memory (MB): peak = 2347.164 ; gain = 817.613
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 2348.656 ; gain = 818.453
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft'
@@ -846,7 +830,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_29_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:57 . Memory (MB): peak = 2347.164 ; gain = 817.613
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 2348.656 ; gain = 818.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -952,7 +936,7 @@ WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused an
 INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module cdc_sync.
 INFO: [Synth 8-3332] Sequential element (GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module cdc_sync.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:02:28 . Memory (MB): peak = 2347.164 ; gain = 817.613
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:57 . Memory (MB): peak = 2348.656 ; gain = 818.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -978,13 +962,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:02:39 . Memory (MB): peak = 3606.656 ; gain = 2077.105
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:01:10 . Memory (MB): peak = 3595.184 ; gain = 2064.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:02:42 . Memory (MB): peak = 3719.242 ; gain = 2189.691
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:01:14 . Memory (MB): peak = 3708.562 ; gain = 2178.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1009,7 +993,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:02:45 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:01:18 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1229,37 +1213,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/670d/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1911]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:02:49 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:01:22 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:02:49 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:01:22 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:02:50 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:01:22 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:02:50 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:01:23 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:02:50 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:01:23 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:02:50 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:01:23 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1317,18 +1301,18 @@ Report Cell Usage:
 |23    |IBUF     |     4|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:02:50 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:01:23 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5724 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:02:20 . Memory (MB): peak = 3737.348 ; gain = 2086.199
-Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:02:50 . Memory (MB): peak = 3737.348 ; gain = 2207.797
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:01:14 . Memory (MB): peak = 3726.641 ; gain = 2073.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:01:23 . Memory (MB): peak = 3726.641 ; gain = 2196.438
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.283 . Memory (MB): peak = 3737.348 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.264 . Memory (MB): peak = 3726.641 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1034 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3760.965 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3748.344 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 71 instances were transformed.
   (CARRY4) => CARRY8: 32 instances
@@ -1338,12 +1322,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete | Checksum: 6bc9a3a4
+Synth Design complete | Checksum: 7a358e94
 INFO: [Common 17-83] Releasing license: Synthesis
-441 Infos, 463 Warnings, 0 Critical Warnings and 0 Errors encountered.
+441 Infos, 449 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:03:16 . Memory (MB): peak = 3760.965 ; gain = 3145.621
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 3760.965 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:01:44 . Memory (MB): peak = 3748.344 ; gain = 3133.656
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 3748.344 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.runs/synth_1/coincidence_detector_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file coincidence_detector_wrapper_utilization_synth.rpt -pb coincidence_detector_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 13 16:34:21 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 09:28:36 2024...

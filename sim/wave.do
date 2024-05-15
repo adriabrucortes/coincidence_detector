@@ -1,35 +1,50 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -divider DUT
-add wave -noupdate -radix unsigned /tb_detector/det/Clk
-add wave -noupdate -radix unsigned /tb_detector/det/Rst_n
-add wave -noupdate -radix unsigned /tb_detector/det/Delays
-add wave -noupdate -color Yellow -itemcolor Yellow /tb_detector/det/Channels
-add wave -noupdate -color {Violet Red} -itemcolor {Violet Red} /tb_detector/det/Pulses
-add wave -noupdate -color Magenta -itemcolor {Dark Orchid} /tb_detector/det/delayed
-add wave -noupdate -color Cyan -itemcolor Cyan -radix unsigned /tb_detector/det/iCnt
-add wave -noupdate -color Cyan -itemcolor Cyan -radix unsigned /tb_detector/det/Counts
-add wave -noupdate -divider {DELAY GEN}
-add wave -noupdate -radix unsigned /tb_detector/det/delay/Delays
-add wave -noupdate -color Yellow -itemcolor Yellow /tb_detector/det/delay/Channels
-add wave -noupdate -color {Sky Blue} -itemcolor {Sky Blue} -radix binary /tb_detector/det/delay/delayRegs
-add wave -noupdate -color Magenta -itemcolor {Dark Orchid} /tb_detector/det/delay/DlayChann
-add wave -noupdate -divider TB
-add wave -noupdate /tb_detector/NCHAN
-add wave -noupdate /tb_detector/NBITS
-add wave -noupdate /tb_detector/NREGS
-add wave -noupdate /tb_detector/NCOMB
 add wave -noupdate -radix unsigned /tb_detector/Clk
 add wave -noupdate -radix unsigned /tb_detector/Rst_n
+add wave -noupdate -radix unsigned /tb_detector/Restart
+add wave -noupdate -radix unsigned /tb_detector/Enable
 add wave -noupdate /tb_detector/Channels
 add wave -noupdate -radix unsigned /tb_detector/Delays
-add wave -noupdate -radix unsigned /tb_detector/Counts
-add wave -noupdate -radix unsigned /tb_detector/expectCounts
+add wave -noupdate -radix unsigned /tb_detector/Cnt_chann
+add wave -noupdate -radix unsigned /tb_detector/Cnt_pairs
+add wave -noupdate -radix unsigned /tb_detector/nCycles
+add wave -noupdate -radix unsigned /tb_detector/Cnt_Clk
+add wave -noupdate -radix binary /tb_detector/dataIn
+add wave -noupdate -divider DUT
+add wave -noupdate -radix unsigned /tb_detector/detector/Clk
+add wave -noupdate -radix unsigned /tb_detector/detector/Rst_n
+add wave -noupdate -radix unsigned /tb_detector/detector/Channels
+add wave -noupdate -radix unsigned /tb_detector/detector/Restart_i
+add wave -noupdate -radix unsigned /tb_detector/detector/Enable_i
+add wave -noupdate -radix unsigned /tb_detector/detector/nCycles_i
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_A_i
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_B_i
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_C_i
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_D_i
+add wave -noupdate -radix unsigned /tb_detector/detector/Restart_o
+add wave -noupdate -radix unsigned /tb_detector/detector/Enable_o
+add wave -noupdate -radix unsigned /tb_detector/detector/nCycles_o
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_A_o
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_B_o
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_C_o
+add wave -noupdate -radix unsigned /tb_detector/detector/Delay_D_o
+add wave -noupdate -radix unsigned /tb_detector/detector/Cnt_Clk
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_A
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_B
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_C
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_D
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_AB
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_AC
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_AD
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_BC
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_BD
+add wave -noupdate -radix unsigned /tb_detector/detector/Counts_CD
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {211700 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1542420 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
-configure wave -valuecolwidth 98
+configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 1
 configure wave -snapdistance 10
@@ -42,4 +57,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {137980 ps} {276700 ps}
+WaveRestoreZoom {0 ps} {2448650 ps}

@@ -4,7 +4,7 @@
     "xci_name": "coincidence_detector_axilite_detector_0_0",
     "cell_name": "axilite_detector_0",
     "component_reference": "xilinx.com:user:axilite_detector:1.0",
-    "ip_revision": "4",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

@@ -25,7 +25,7 @@ reg  [(NCHAN*(NCHAN-1)/2)-1:0] iCnt_pairs;
 reg  [NCHAN-1:0] delayed;
 wire [NCHAN-1:0] Pulses; // Posedge
 
-assign Reset_n = Rst_n || ~Restart_i;
+assign Reset_n = Rst_n && !Restart_i;
 
 always @(posedge Clk) begin
     Enable_o <= Enable_i;

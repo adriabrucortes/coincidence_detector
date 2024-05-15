@@ -2,16 +2,18 @@ module tb_detector ();
 
 parameter CLK_HALFPERIOD = 5;
 parameter NCHAN = 4;
-parameter NBITS = 4;
-parameter NREGS = 4;
+parameter NBITS = 32;
+parameter NREGS = 1024;
 parameter NCOMB = NCHAN*(NCHAN-1)/2;
 
-wire                  Clk, Rst_n;
+reg                   Clk, Rst_n, Restart, Enable;
 reg  [NCHAN-1:0]      Channels;
-reg  [NBITS-1:0]      Delays [NCHAN-1:0];
+reg  [NBITS-1:0]      Delays           [NCHAN-1:0];
 
-reg  [NBITS-1:0]      Counts        [NCOMB-1:0];
-reg  [NBITS-1:0]      expectCounts  [NCOMB-1:0];
+reg  [NBITS-1:0]      Cnt_chann        [NCHAN-1:0];
+reg  [NBITS-1:0]      Cnt_pairs        [NCOMB-1:0];
+reg  [NBITS-1:0]      xpect_Cnt_pairs  [NCOMB-1:0];
+reg  [NBITS-1:0]      nCycles, Cnt_Clk;
 
 reg  [NCHAN-1:0]      dataIn;
 
@@ -23,6 +25,7 @@ sys_model #(
   .Rst_n            (Rst_n)
 );
 
+/*
 detector #(
     .NCHAN(NCHAN),
     .NBITS(NBITS),
@@ -30,17 +33,59 @@ detector #(
 ) det (
     .Clk        (Clk),
     .Rst_n      (Rst_n),
+    .Restart_i  (Restart),
+    .Enable_i   (Enable),
+    .nCycles_i  (nCycles),
+    .Delays_i   (Delays),
     .Channels   (Channels),
-    .Delays     (Delays),
-    .Counts     (Counts)
+    .Cnt_Clk    (Cnt_Clk),
+    .Cnt_chann  (Cnt_chann),
+    .Cnt_pairs  (Cnt_pairs)
 );
+*/
+
+detector_top_wrapper_v #(
+       .NCHAN(NCHAN),
+       .NBITS(NBITS),
+       .NREGS(NREGS)
+    ) detector (
+       // Input ports
+       .Clk          (Clk),
+       .Rst_n        (Rst_n),
+       .Channels     (Channels),
+       
+       // Input AXIS
+	   .Restart_i	 (Restart),
+       .Enable_i     (Enable), // This is a 1-bit control
+       .nCycles_i    (nCycles),
+       .Delay_A_i    (Delays[0]),
+       .Delay_B_i    (Delays[1]),
+       .Delay_C_i    (Delays[2]),
+       .Delay_D_i    (Delays[3]),
+       .Cnt_Clk      (Cnt_Clk),
+       .Counts_A     (Cnt_chann[0]),
+       .Counts_B     (Cnt_chann[1]),
+       .Counts_C     (Cnt_chann[2]),
+       .Counts_D     (Cnt_chann[3]),
+       .Counts_AB    (Cnt_pairs[0]),
+       .Counts_AC    (Cnt_pairs[1]),
+       .Counts_AD    (Cnt_pairs[2]),
+       .Counts_BC    (Cnt_pairs[3]),
+       .Counts_BD    (Cnt_pairs[4]),
+       .Counts_CD    (Cnt_pairs[5])
+    );
 
 // __________________________________
 // Sigs and vars init
 initial begin
     Channels <= 4'b0000; // Inputs are 0 at first
-    Delays   <= {4'd1, 4'd1, 4'd2, 4'd2};
-    Counts   <= {4'd0, 4'd0, 4'd0, 4'd0, 4'd0, 4'd0}; // 0 counts on every channel
+    nCycles <= 10000;
+    
+    Restart <= 1'b1;
+    Enable <= 1'b0;
+
+    Delays <= {4'd0, 4'd0, 4'd0, 4'd5};
+    Cnt_pairs <= {4'd0, 4'd0, 4'd0, 4'd0, 4'd0, 4'd0}; // 0 counts on every channel
 end
 
 initial begin
@@ -50,8 +95,8 @@ initial begin
     // Reset
     u_sys.reset(2);
     test1(50);
-    u_sys.wait_cycles(100);
-    
+    u_sys.wait_cycles(30);
+    test1(120);
 
     $stop;
 end
@@ -70,8 +115,19 @@ task test1;
 */
 
     begin
-        //expectCounts <= 0;
+        // Declarations
         automatic int expCnt;
+
+        // Assignments
+        //expectCounts <= 0;
+        nCycles <= N;
+        Enable = 1'b0;
+        Restart = 1'b1;
+        u_sys.wait_cycles(1);
+        Restart = 1'b0;
+        u_sys.wait_cycles(1);
+        Enable = 1'b1;
+
         repeat(N) begin
             expCnt = 0; // Reset counter
             
@@ -81,6 +137,11 @@ task test1;
             $display("[Info- %t] Input vector: %b", $time, dataIn);
             u_sys.wait_cycles(1);
         end
+
+        Enable = 1'b0;
+        Restart = 1'b1;
+        u_sys.wait_cycles(1);
+        Restart = 1'b0;
     end
 endtask
 

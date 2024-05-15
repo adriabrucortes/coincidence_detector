@@ -11,24 +11,24 @@ cModel Technology
 dC:/Users/HP/Documents/Universitat/8e/DSSD/pracs/p4/sim
 vDelayGenerator
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1715188575
+Z1 !s110 1715757500
 !i10b 1
-!s100 a>YYL9FYHXdLG2jQB92kk0
+!s100 dgSIM`oN?mDZiJa5]gW>A2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I@eOB7cV9_ABGig10KEj0[0
+IRF4bJVmfI_^b?RiENhco73
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dC:/Users/HP/Documents/Projectes/Coincidence_detector/sim
-w1715182358
+w1715610571
 8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv
 FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv
-!i122 211
-L0 1 38
+!i122 411
+L0 1 28
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1715188575.000000
+Z6 !s108 1715757500.000000
 !s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/DelayGenerator.sv|
 !i113 1
@@ -37,19 +37,19 @@ Z8 tCvgOpt 0
 n@delay@generator
 vdetector
 R0
-Z9 !s110 1715188576
+Z9 !s110 1715757501
 !i10b 1
-!s100 5hP;f1i3F2m2c=d<K:K`H0
+!s100 O=`odgTdz9:j4OW[Z_kf@3
 R2
-I:`MPWIzbNLO?]a@nfZQTS1
+ITmz?nH0LGK];@@kE@YZzl2
 R3
 S1
 R4
-w1715172681
+w1715674882
 8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv
 FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv
-!i122 213
-L0 1 53
+!i122 413
+L0 1 117
 R5
 r1
 !s85 0
@@ -59,6 +59,54 @@ R6
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/detector.sv|
 !i113 1
 R7
+R8
+vdetector_top_wrapper_sv
+R0
+Z10 !s110 1715757502
+!i10b 1
+!s100 <Pzk55bZJZ6J@bU108b<H1
+R2
+IQlJcb:c3eTI4iI8lQ[n>n3
+R3
+S1
+R4
+w1715757141
+8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper.sv
+FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper.sv
+!i122 415
+L0 1 80
+R5
+r1
+!s85 0
+31
+Z11 !s108 1715757501.000000
+!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper.sv|
+!i113 1
+R7
+R8
+vdetector_top_wrapper_v
+R10
+!i10b 1
+!s100 <H]I`9Lh:U:`OiWUL`0l`1
+R2
+IJOjVW?]o^n43`_oo5M=YR3
+R3
+R4
+w1715605529
+8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper_v.v
+FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper_v.v
+!i122 416
+L0 1 70
+R5
+r1
+!s85 0
+31
+!s108 1715757502.000000
+!s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper_v.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/src/wrappers/detector_top_wrapper_v.v|
+!i113 1
+Z12 o-work work
 R8
 vpos_edge_det
 R0
@@ -73,7 +121,7 @@ R4
 w1715088992
 8C:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv
 FC:/Users/HP/Documents/Projectes/Coincidence_detector/src/pos_edge_det.sv
-!i122 212
+!i122 412
 L0 1 14
 R5
 r1
@@ -106,28 +154,28 @@ r1
 !s107 ../misc/timescale.v|C:/Users/HP/Documents/Projectes/Coincidence_detector/misc/sys_model.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/misc/sys_model.v|
 !i113 1
-o-work work
+R12
 R8
 vtb_detector
 R0
 R9
 !i10b 1
-!s100 B0ekNV2;;lEU><ZAhnDn83
+!s100 cJeXMc565`2:OVd:hK9FB3
 R2
-IGbeM@IQGiZnXZ[eWm]mR71
+IBnUPVXW?bG?jUG>;8W0im0
 R3
 S1
 R4
-w1715188572
+w1715757478
 8C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv
 FC:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv
-!i122 214
-L0 1 87
+!i122 414
+L0 1 148
 R5
 r1
 !s85 0
 31
-!s108 1715188576.000000
+R11
 !s107 C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/HP/Documents/Projectes/Coincidence_detector/tb/tb_detector.sv|
 !i113 1

@@ -37,10 +37,24 @@ wire [NBITS-1:0]      Delays_o      [4-1:0];
 wire [NBITS-1:0]      Counts_chann  [4-1:0];
 wire [NBITS-1:0]      Counts_pairs  [6-1:0];
 
-assign Delays_i = {Delay_A_i, Delay_B_i, Delay_C_i, Delay_D_i};
-assign Delays_o = {Delay_A_o, Delay_B_o, Delay_C_o, Delay_D_o};
-assign Counts_chann = {Counts_A, Counts_B, Counts_C, Counts_D};
-assign Counts_pairs = {Counts_AB, Counts_AC, Counts_AD, Counts_BC, Counts_BD, Counts_CD};
+assign Delays_i = {Delay_D_i, Delay_C_i, Delay_B_i, Delay_A_i};
+
+assign Delay_A_o = Delays_o[0];
+assign Delay_B_o = Delays_o[1];
+assign Delay_C_o = Delays_o[2];
+assign Delay_D_o = Delays_o[3];
+
+assign Counts_A = Counts_chann[0];
+assign Counts_B = Counts_chann[1];
+assign Counts_C = Counts_chann[2];
+assign Counts_D = Counts_chann[3];
+
+assign Counts_AB = Counts_pairs[0];
+assign Counts_AC = Counts_pairs[1];
+assign Counts_AD = Counts_pairs[2];
+assign Counts_BC = Counts_pairs[3];
+assign Counts_BD = Counts_pairs[4];
+assign Counts_CD = Counts_pairs[5];
 
 detector #(
     .NCHAN(NCHAN),

@@ -11,20 +11,17 @@ reg [NCHAN-1:0][NREGS-1:0] delayRegs ; // NCHAN registers for every Channel
 always @(posedge Clk or negedge Rst_n) begin
 
     if (!Rst_n) begin
-        for (int i = 0; i < NCHAN; i++) 
+        for (int i = 0; i < NCHAN; i++) begin
             delayRegs[i] <= {NREGS{1'b0}};
             DlayChann[i] <= {NREGS{1'b0}};
+        end
 
     end else begin
         for (int i = 0; i < NCHAN; i++) begin  // Put regs for every channel
             // Shift left
             delayRegs[i] <= {delayRegs[i][NREGS-2:0], Channels[i]}; 
             DlayChann[i] <= delayRegs[i][Delays[i]]; // Output
-
         end
-    end else begin
-        delayRegs <= delayRegs;
-        DlayChann <= DlayChann;
     end
 end
 

@@ -1,8 +1,8 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Mon May 13 16:37:22 2024
+| Date         : Wed May 15 10:27:13 2024
 | Host         : Elitebook-QCommsUB-Adria
-| Design       : checkpoint_coincidence_detector_wrapper
+| Design       : design_1
 | Device       : xczu3eg-sbva484-1-E-
 -------------------------------------
 

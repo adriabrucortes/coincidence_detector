@@ -92,15 +92,15 @@ vcom -work xil_defaultlib -93  -incr \
 "../../../bd/coincidence_detector/ip/coincidence_detector_axi_timer_0_0/sim/coincidence_detector_axi_timer_0_0.vhd" \
 
 vlog -work xil_defaultlib  -incr -v2k5 "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_15 -l zynq_ultra_ps_e_vip_v1_0_15 -l xil_defaultlib -l axi_lite_ipif_v3_0_4 -l lib_cdc_v1_0_2 -l lib_pkg_v1_0_3 -l axi_timer_v2_0_31 -l generic_baseblocks_v2_1_1 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 -l proc_sys_reset_v5_0_14 -l axi_protocol_converter_v2_1_29 -l axi_clock_converter_v2_1_28 -l blk_mem_gen_v8_4_7 -l axi_dwidth_converter_v2_1_29 \
-"../../../bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v" \
-"../../../bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper_v.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper_v.v" \
 
 vlog -work xil_defaultlib  -incr "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_15 -l zynq_ultra_ps_e_vip_v1_0_15 -l xil_defaultlib -l axi_lite_ipif_v3_0_4 -l lib_cdc_v1_0_2 -l lib_pkg_v1_0_3 -l axi_timer_v2_0_31 -l generic_baseblocks_v2_1_1 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 -l proc_sys_reset_v5_0_14 -l axi_protocol_converter_v2_1_29 -l axi_clock_converter_v2_1_28 -l blk_mem_gen_v8_4_7 -l axi_dwidth_converter_v2_1_29 \
-"../../../bd/coincidence_detector/ipshared/155c/src/DelayGenerator.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/pos_edge_det.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/DelayGenerator.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/pos_edge_det.sv" \
 "../../../bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0/sim/coincidence_detector_axilite_detector_0_0.sv" \
 
 vlog -work generic_baseblocks_v2_1_1  -incr -v2k5 "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" -l xilinx_vip -l xpm -l axi_infrastructure_v1_1_0 -l axi_vip_v1_1_15 -l zynq_ultra_ps_e_vip_v1_0_15 -l xil_defaultlib -l axi_lite_ipif_v3_0_4 -l lib_cdc_v1_0_2 -l lib_pkg_v1_0_3 -l axi_timer_v2_0_31 -l generic_baseblocks_v2_1_1 -l axi_register_slice_v2_1_29 -l fifo_generator_v13_2_9 -l axi_data_fifo_v2_1_28 -l axi_crossbar_v2_1_30 -l proc_sys_reset_v5_0_14 -l axi_protocol_converter_v2_1_29 -l axi_clock_converter_v2_1_28 -l blk_mem_gen_v8_4_7 -l axi_dwidth_converter_v2_1_29 \

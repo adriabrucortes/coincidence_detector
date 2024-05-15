@@ -89,15 +89,15 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/coincidence_detector/ip/coincidence_detector_axi_timer_0_0/sim/coincidence_detector_axi_timer_0_0.vhd" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
-"../../../bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v" \
-"../../../bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper_v.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper_v.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  -sv -L axi_vip_v1_1_15 -L zynq_ultra_ps_e_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \
-"../../../bd/coincidence_detector/ipshared/155c/src/DelayGenerator.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/pos_edge_det.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/DelayGenerator.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/pos_edge_det.sv" \
 "../../../bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0/sim/coincidence_detector_axilite_detector_0_0.sv" \
 
 vlog -work generic_baseblocks_v2_1_1  -incr -mfcu  "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" "+incdir+../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" "+incdir+C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" \

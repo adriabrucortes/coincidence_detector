@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date              : Mon May 13 16:39:11 2024
+| Date              : Wed May 15 10:28:59 2024
 | Host              : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file coincidence_detector_wrapper_clock_utilization_routed.rpt
 | Design            : coincidence_detector_wrapper
@@ -51,8 +51,8 @@ Table of Contents
 +-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+----------+-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Root | Clock Delay Group | Clock Low Fanout | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock    | Driver Pin                                                                                                            | Net                                                                                                 |
 +-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+----------+-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
-| g0        | src0      | BUFG_PS/O       | None       | BUFG_PS_X0Y58 | X0Y2         | X0Y0 |                   |                  |                 3 |        8185 |               0 |       10.000 | clk_pl_0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O                                         | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
-| g1        | src1      | BUFGCE/O        | None       | BUFGCE_X0Y26  | X1Y1         | X1Y1 | n/a               |                  |                 3 |           0 |            4452 |          n/a | n/a      | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/delayRegs[0][1023]_i_1_bufg_place/O | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
+| g0        | src0      | BUFG_PS/O       | None       | BUFG_PS_X0Y58 | X0Y2         | X0Y0 |                   |                  |                 2 |        8185 |               0 |       10.000 | clk_pl_0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O                                         | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
+| g1        | src1      | BUFGCE/O        | None       | BUFGCE_X0Y26  | X1Y1         | X1Y1 | n/a               |                  |                 2 |           0 |            4452 |          n/a | n/a      | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/delayRegs[0][1023]_i_1_bufg_place/O | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
 | g2        | src2      | BUFGCE/O        | None       | BUFGCE_X0Y56  | X1Y2         | X1Y2 | n/a               |                  |                 2 |           0 |            1360 |          n/a | n/a      | coincidence_detector_i/rst_ps8_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_bufg_place/O                             | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]                                      |
 +-----------+-----------+-----------------+------------+---------------+--------------+------+-------------------+------------------+-------------------+-------------+-----------------+--------------+----------+-----------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
@@ -62,13 +62,13 @@ Table of Contents
 3. Global Clock Source Details
 ------------------------------
 
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| Source Id | Global Id | Driver Type/Pin | Constraint | Site         | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                                                                 | Net                                                                                                            |
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| src0      | g0        | PS8/PLCLK[0]    | None       | PS8_X0Y0     | X0Y0         |           1 |               0 |              10.000 | clk_pl_0     | coincidence_detector_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]                                               | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]                                             |
-| src1      | g1        | LUT2/O          | None       | SLICE_X13Y68 | X0Y1         |           1 |               0 |                     |              | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/delayRegs[0][1023]_i_1/O | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0_bufg_place |
-| src2      | g2        | FDRE/Q          | None       | SLICE_X0Y91  | X0Y1         |           1 |               0 |                     |              | coincidence_detector_i/rst_ps8_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q                             | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]_bufg_place                                      |
-+-----------+-----------+-----------------+------------+--------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
++-----------+-----------+-----------------+------------+-------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| Source Id | Global Id | Driver Type/Pin | Constraint | Site        | Clock Region | Clock Loads | Non-Clock Loads | Source Clock Period | Source Clock | Driver Pin                                                                                                 | Net                                                                                                            |
++-----------+-----------+-----------------+------------+-------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| src0      | g0        | PS8/PLCLK[0]    | None       | PS8_X0Y0    | X0Y0         |           1 |               0 |              10.000 | clk_pl_0     | coincidence_detector_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]                                               | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]                                             |
+| src1      | g1        | LUT2/O          | None       | SLICE_X5Y64 | X0Y1         |           1 |               0 |                     |              | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/delayRegs[0][1023]_i_1/O | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0_bufg_place |
+| src2      | g2        | FDRE/Q          | None       | SLICE_X2Y91 | X0Y1         |           1 |               0 |                     |              | coincidence_detector_i/rst_ps8_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q                             | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]_bufg_place                                      |
++-----------+-----------+-----------------+------------+-------------+--------------+-------------+-----------------+---------------------+--------------+------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
 
@@ -84,7 +84,7 @@ Table of Contents
 | X0Y0              |     3 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
 | X1Y0              |     2 |    24 |     0 |    28 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
 | X0Y1              |     3 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     0 |    24 |     0 |     0 |     0 |     0 |
-| X1Y1              |     3 |    24 |     1 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
+| X1Y1              |     2 |    24 |     1 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
 | X0Y2              |     0 |    24 |     0 |     4 |     0 |     0 |     0 |     0 |     0 |     0 |     1 |    24 |     0 |     0 |     0 |     0 |
 | X1Y2              |     0 |    24 |     1 |    24 |     0 |     4 |     0 |     8 |     0 |     0 |     0 |     0 |     0 |     1 |     0 |     2 |
 +-------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
@@ -99,10 +99,10 @@ Table of Contents
 +-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
 | Clock Region Name | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   | Used   | Avail   |
 +-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
-| X0Y0              |      3 |      24 |   2131 |   27840 |     34 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X0Y0              |      3 |      24 |   4204 |   27840 |     52 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
 | X1Y0              |      2 |      24 |      0 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
-| X0Y1              |      3 |      24 |   5850 |   27840 |     71 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
-| X1Y1              |      3 |      24 |     98 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
+| X0Y1              |      3 |      24 |   3875 |   27840 |     53 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
+| X1Y1              |      2 |      24 |      0 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
 | X0Y2              |      0 |      24 |      0 |   27840 |      0 |    4800 |      0 |      72 |      0 |      72 |      0 |       0 |      0 |       0 |
 | X1Y2              |      0 |      24 |      0 |   19200 |      0 |    4800 |      0 |      72 |      0 |      48 |      0 |       0 |      0 |       0 |
 +-------------------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+--------+---------+
@@ -117,7 +117,7 @@ All Modules
 |    | X0 | X1 |
 +----+----+----+
 | Y2 |  0 |  0 |
-| Y1 |  3 |  3 |
+| Y1 |  3 |  2 |
 | Y0 |  3 |  2 |
 +----+----+----+
 
@@ -134,7 +134,7 @@ All Modules
 | X0Y0              |    0 |    24 |  0.00 |    3 |    24 | 12.50 |    1 |    24 |  4.17 |    1 |    24 |  4.17 |
 | X1Y0              |    0 |    24 |  0.00 |    2 |    24 |  8.33 |    0 |    24 |  0.00 |    2 |    24 |  8.33 |
 | X0Y1              |    0 |    24 |  0.00 |    3 |    24 | 12.50 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |
-| X1Y1              |    0 |    24 |  0.00 |    3 |    24 | 12.50 |    0 |    24 |  0.00 |    2 |    24 |  8.33 |
+| X1Y1              |    0 |    24 |  0.00 |    2 |    24 |  8.33 |    0 |    24 |  0.00 |    2 |    24 |  8.33 |
 | X0Y2              |    1 |    24 |  4.17 |    0 |    24 |  0.00 |    1 |    24 |  4.17 |    0 |    24 |  0.00 |
 | X1Y2              |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    0 |    24 |  0.00 |    1 |    24 |  4.17 |
 +-------------------+------+-------+-------+------+-------+-------+------+-------+-------+------+-------+-------+
@@ -154,13 +154,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+----------+-----+-----------------------+
-|    | X0       | X1  | HORIZONTAL PROG DELAY |
-+----+----------+-----+-----------------------+
-| Y2 |    (D) 0 |   0 |                     - |
-| Y1 |     5921 |  98 |                     0 |
-| Y0 | (R) 2166 |   0 |                     0 |
-+----+----------+-----+-----------------------+
++----+----------+----+-----------------------+
+|    | X0       | X1 | HORIZONTAL PROG DELAY |
++----+----------+----+-----------------------+
+| Y2 |    (D) 0 |  0 |                     - |
+| Y1 |     3928 |  0 |                     0 |
+| Y0 | (R) 4257 |  0 |                     0 |
++----+----------+----+-----------------------+
 
 
 9. Device Cell Placement Summary for Global Clock g1
@@ -177,13 +177,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-------+------------+-----------------------+
-|    | X0    | X1         | HORIZONTAL PROG DELAY |
-+----+-------+------------+-----------------------+
-| Y2 |     0 |          0 |                     - |
-| Y1 |  3553 | (R) (D) 98 |                     0 |
-| Y0 |   801 |          0 |                     0 |
-+----+-------+------------+-----------------------+
++----+-------+-----------+-----------------------+
+|    | X0    | X1        | HORIZONTAL PROG DELAY |
++----+-------+-----------+-----------------------+
+| Y2 |     0 |         0 |                     - |
+| Y1 |  2048 | (R) (D) 0 |                     0 |
+| Y0 |  2404 |         0 |                     0 |
++----+-------+-----------+-----------------------+
 
 
 10. Device Cell Placement Summary for Global Clock g2
@@ -204,8 +204,8 @@ All Modules
 |    | X0   | X1        | HORIZONTAL PROG DELAY |
 +----+------+-----------+-----------------------+
 | Y2 |    0 | (R) (D) 0 |                     - |
-| Y1 |  909 |         0 |                     0 |
-| Y0 |  451 |         0 |                     0 |
+| Y1 |  643 |         0 |                     0 |
+| Y0 |  717 |         0 |                     0 |
 +----+------+-----------+-----------------------+
 
 
@@ -215,9 +215,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
-| g0        | 10    | BUFG_PS/O       | None       |        2166 |               0 | 2131 |          34 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
-| g1        | 2     | BUFGCE/O        | None       |           0 |             801 |  801 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
-| g2        | 8     | BUFGCE/O        | None       |           0 |             451 |  451 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]                                      |
+| g0        | 10    | BUFG_PS/O       | None       |        4257 |               0 | 4204 |          52 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
+| g1        | 2     | BUFGCE/O        | None       |           0 |            2404 | 2404 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
+| g2        | 8     | BUFGCE/O        | None       |           0 |             717 |  717 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -245,9 +245,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
-| g0        | 10    | BUFG_PS/O       | None       |        5921 |               0 | 5850 |          71 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
-| g1        | 2     | BUFGCE/O        | None       |           0 |            3553 | 3553 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
-| g2        | 8     | BUFGCE/O        | None       |           0 |             909 |  909 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]                                      |
+| g0        | 10    | BUFG_PS/O       | None       |        3928 |               0 | 3875 |          53 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
+| g1        | 2     | BUFGCE/O        | None       |           0 |            2048 | 2048 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
+| g2        | 8     | BUFGCE/O        | None       |           0 |             643 |  643 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered
 ** Non-Clock Loads column represents cell count of non-clock pin loads
@@ -260,8 +260,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                                                 |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
-| g0        | 10    | BUFG_PS/O       | None       |          98 |               0 | 98 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0                                               |
-| g1        | 2     | BUFGCE/O        | None       |           0 |              98 | 98 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
+| g1+       | 2     | BUFGCE/O        | None       |           0 |               0 |  0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/axilite_detector_0/inst/axilite_detector_v1_0_S00_AXI_inst/slv_reg1_reg[0]_0 |
 | g2+       | 8     | BUFGCE/O        | None       |           0 |               0 |  0 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | coincidence_detector_i/rst_ps8_0_100M/U0/peripheral_aresetn[0]                                      |
 +-----------+-------+-----------------+------------+-------------+-----------------+----+-------------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------------------------------+
 * Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered

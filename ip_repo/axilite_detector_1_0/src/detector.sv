@@ -25,7 +25,7 @@ reg  [(NCHAN*(NCHAN-1)/2)-1:0] iCnt_pairs;
 reg  [NCHAN-1:0] delayed;
 wire [NCHAN-1:0] Pulses; // Posedge
 
-assign Reset_n = Rst_n || ~Restart_i;
+assign Reset_n = Rst_n && !Restart_i;
 
 always @(posedge Clk) begin
     Enable_o <= Enable_i;
@@ -78,7 +78,7 @@ always @(posedge Clk or negedge Reset_n) begin
     end else if ((Enable_i) && (Cnt_Clk < nCycles_i)) begin
         // Counts per channel
         for (int i = 0; i < NCHAN; i++) begin
-            Cnt_chann[i] <= Cnt_chann[i] + Channels[i];
+            Cnt_chann[i] <= Cnt_chann[i] + delayed[i]; // THIS IS DIFFERENT
         end
     
     end else begin

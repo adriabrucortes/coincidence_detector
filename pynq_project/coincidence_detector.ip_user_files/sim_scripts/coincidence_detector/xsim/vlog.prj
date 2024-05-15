@@ -1,14 +1,14 @@
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" --include "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" \
 "../../../bd/coincidence_detector/ip/coincidence_detector_zynq_ultra_ps_e_0_0/sim/coincidence_detector_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
-"../../../bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0_S00_AXI.v" \
-"../../../bd/coincidence_detector/ipshared/155c/hdl/axilite_detector_v1_0.v" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper_v.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0_S00_AXI.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/hdl/axilite_detector_v1_0.v" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper_v.v" \
 
 sv xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" --include "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" \
-"../../../bd/coincidence_detector/ipshared/155c/src/DelayGenerator.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/detector_top_wrapper.sv" \
-"../../../bd/coincidence_detector/ipshared/155c/src/pos_edge_det.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/DelayGenerator.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/detector_top_wrapper.sv" \
+"../../../bd/coincidence_detector/ipshared/2f8b/src/pos_edge_det.sv" \
 "../../../bd/coincidence_detector/ip/coincidence_detector_axilite_detector_0_0/sim/coincidence_detector_axilite_detector_0_0.sv" \
 
 verilog xil_defaultlib --include "C:/Xilinx/Vivado/2023.2/data/xilinx_vip/include" --include "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/ec67/hdl" --include "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector/ipshared/2fcd/hdl" \
