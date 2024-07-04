@@ -76,9 +76,18 @@ set_param power.BramSDPPropagationFix 1
 set_param power.enableUnconnectedCarry8PinPower 1
 set_param power.enableCarry8RouteBelPower 1
 set_param power.enableLutRouteBelPower 1
-set_param synth.incrementalSynthesisCache C:/Users/HP/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10392-Elitebook-QCommsUB-Adria/incrSyn
+set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
+set_msg_config  -id {17-179}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu3eg-sbva484-1-e
 
@@ -99,7 +108,10 @@ set_property ip_output_repo c:/Users/HP/Documents/Projectes/Coincidence_detector
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v
+read_verilog -library xil_defaultlib {
+  C:/Users/HP/Documents/Projectes/Coincidence_detector/src/ds_to_single.v
+  C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/hdl/coincidence_detector_wrapper.v
+}
 add_files C:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.srcs/sources_1/bd/coincidence_detector/coincidence_detector.bd
 set_property used_in_implementation false [get_files -all c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_zynq_ultra_ps_e_0_0/coincidence_detector_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/HP/Documents/Projectes/Coincidence_detector/pynq_project/coincidence_detector.gen/sources_1/bd/coincidence_detector/ip/coincidence_detector_zynq_ultra_ps_e_0_0/coincidence_detector_zynq_ultra_ps_e_0_0.xdc]

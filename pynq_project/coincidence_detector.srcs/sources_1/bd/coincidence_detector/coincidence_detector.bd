@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x5564F2FB5564F2FB",
+      "boundary_crc": "0x633AACE6633AACE6",
       "device": "xczu3eg-sbva484-1-e",
       "gen_directory": "../../../../coincidence_detector.gen/sources_1/bd/coincidence_detector",
       "name": "coincidence_detector",
@@ -27,12 +27,13 @@
         "m00_couplers": {},
         "m01_couplers": {}
       },
-      "rst_ps8_0_100M": ""
+      "rst_ps8_0_100M": "",
+      "ds_to_single_0": ""
     },
     "ports": {
-      "Channels": {
+      "DS_Channels": {
         "direction": "I",
-        "left": "3",
+        "left": "7",
         "right": "0"
       }
     },
@@ -553,16 +554,19 @@
             "value": "IOPLL"
           },
           "PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ": {
-            "value": "100.000000"
+            "value": "1179.649902"
           },
           "PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0": {
-            "value": "15"
+            "value": "1"
           },
           "PSU__CRL_APB__PL0_REF_CTRL__DIVISOR1": {
             "value": "1"
           },
+          "PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ": {
+            "value": "100"
+          },
           "PSU__CRL_APB__PL0_REF_CTRL__SRCSEL": {
-            "value": "IOPLL"
+            "value": "RPLL"
           },
           "PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ": {
             "value": "24.999975"
@@ -583,13 +587,19 @@
             "value": "1"
           },
           "PSU__CRL_APB__PL3_REF_CTRL__ACT_FREQMHZ": {
-            "value": "374.999625"
+            "value": "300.000000"
           },
           "PSU__CRL_APB__PL3_REF_CTRL__DIVISOR0": {
-            "value": "4"
+            "value": "5"
           },
           "PSU__CRL_APB__PL3_REF_CTRL__DIVISOR1": {
             "value": "1"
+          },
+          "PSU__CRL_APB__PL3_REF_CTRL__FREQMHZ": {
+            "value": "100"
+          },
+          "PSU__CRL_APB__PL3_REF_CTRL__SRCSEL": {
+            "value": "IOPLL"
           },
           "PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR0": {
             "value": "12"
@@ -1003,7 +1013,7 @@
             "value": "0"
           },
           "PSU__FPGA_PL3_ENABLE": {
-            "value": "0"
+            "value": "1"
           },
           "PSU__GPIO0_MIO__IO": {
             "value": "MIO 0 .. 25"
@@ -1081,6 +1091,9 @@
             "value": "1"
           },
           "PSU__PL_CLK0_BUF": {
+            "value": "TRUE"
+          },
+          "PSU__PL_CLK3_BUF": {
             "value": "TRUE"
           },
           "PSU__PMU_COHERENCY": {
@@ -1525,7 +1538,7 @@
       },
       "axilite_detector_0": {
         "vlnv": "xilinx.com:user:axilite_detector:1.0",
-        "ip_revision": "5",
+        "ip_revision": "9",
         "xci_name": "coincidence_detector_axilite_detector_0_0",
         "xci_path": "ip\\coincidence_detector_axilite_detector_0_0\\coincidence_detector_axilite_detector_0_0.xci",
         "inst_hier_path": "axilite_detector_0"
@@ -2149,6 +2162,30 @@
         "xci_name": "coincidence_detector_rst_ps8_0_100M_0",
         "xci_path": "ip\\coincidence_detector_rst_ps8_0_100M_0\\coincidence_detector_rst_ps8_0_100M_0.xci",
         "inst_hier_path": "rst_ps8_0_100M"
+      },
+      "ds_to_single_0": {
+        "vlnv": "xilinx.com:module_ref:ds_to_single:1.0",
+        "ip_revision": "1",
+        "xci_name": "coincidence_detector_ds_to_single_0_0",
+        "xci_path": "ip\\coincidence_detector_ds_to_single_0_0\\coincidence_detector_ds_to_single_0_0.xci",
+        "inst_hier_path": "ds_to_single_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ds_to_single",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "DS_Channels": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Channels": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2178,9 +2215,15 @@
       }
     },
     "nets": {
-      "Channels_1": {
+      "DS_Channels_1": {
         "ports": [
-          "Channels",
+          "DS_Channels",
+          "ds_to_single_0/DS_Channels"
+        ]
+      },
+      "ds_to_single_0_Channels": {
+        "ports": [
+          "ds_to_single_0/Channels",
           "axilite_detector_0/Channels"
         ]
       },
@@ -2199,15 +2242,21 @@
       "zynq_ultra_ps_e_0_pl_clk0": {
         "ports": [
           "zynq_ultra_ps_e_0/pl_clk0",
-          "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
+          "axilite_detector_0/PL_Clk"
+        ]
+      },
+      "zynq_ultra_ps_e_0_pl_clk3": {
+        "ports": [
+          "zynq_ultra_ps_e_0/pl_clk3",
           "ps8_0_axi_periph/S00_ACLK",
-          "rst_ps8_0_100M/slowest_sync_clk",
-          "axi_timer_0/s_axi_aclk",
-          "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/ACLK",
+          "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/M01_ACLK",
-          "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
           "ps8_0_axi_periph/S01_ACLK",
+          "axi_timer_0/s_axi_aclk",
+          "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
+          "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
+          "rst_ps8_0_100M/slowest_sync_clk",
           "axilite_detector_0/s00_axi_aclk"
         ]
       },

@@ -24,6 +24,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==coincidence
 # IP: bd/coincidence_detector/ip/coincidence_detector_rst_ps8_0_100M_0/coincidence_detector_rst_ps8_0_100M_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==coincidence_detector_rst_ps8_0_100M_0 || ORIG_REF_NAME==coincidence_detector_rst_ps8_0_100M_0} -quiet] -quiet
 
+# IP: bd/coincidence_detector/ip/coincidence_detector_ds_to_single_0_0/coincidence_detector_ds_to_single_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==coincidence_detector_ds_to_single_0_0 || ORIG_REF_NAME==coincidence_detector_ds_to_single_0_0} -quiet] -quiet
+
 # IP: bd/coincidence_detector/ip/coincidence_detector_auto_ds_0/coincidence_detector_auto_ds_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==coincidence_detector_auto_ds_0 || ORIG_REF_NAME==coincidence_detector_auto_ds_0} -quiet] -quiet
 

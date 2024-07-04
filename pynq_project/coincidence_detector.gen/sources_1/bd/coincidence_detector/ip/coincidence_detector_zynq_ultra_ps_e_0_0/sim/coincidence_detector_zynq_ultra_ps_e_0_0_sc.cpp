@@ -97,7 +97,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0_sc::coincidence_detector_zynq_ultra_ps_
     model_param_props.addString("C_PL_CLK0_BUF", "TRUE");
     model_param_props.addString("C_PL_CLK1_BUF", "FALSE");
     model_param_props.addString("C_PL_CLK2_BUF", "FALSE");
-    model_param_props.addString("C_PL_CLK3_BUF", "FALSE");
+    model_param_props.addString("C_PL_CLK3_BUF", "TRUE");
     model_param_props.addString("COMPONENT_NAME", "coincidence_detector_zynq_ultra_ps_e_0_0");
 
   mp_impl = new zynq_ultra_ps_e_tlm("inst", model_param_props);

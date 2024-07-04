@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1715761503" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/coincidence_detector_wrapper.dcp">
+<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1720088919" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/coincidence_detector_wrapper.dcp">
   <File Type="PA-TCL" Name="coincidence_detector_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="coincidence_detector_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="coincidence_detector_wrapper_reports.tcl"/>
@@ -11,6 +11,13 @@
   <File Type="VDS-TIMING-PB" Name="coincidence_detector_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../src/ds_to_single.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/bd/coincidence_detector/coincidence_detector.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>

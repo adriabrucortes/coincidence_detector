@@ -2,7 +2,7 @@
 //Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-//Date        : Wed May 15 09:25:42 2024
+//Date        : Thu Jul  4 12:28:16 2024
 //Host        : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
 //Command     : generate_target coincidence_detector.bd
 //Design      : coincidence_detector
@@ -10,12 +10,13 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "coincidence_detector,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=coincidence_detector,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=14,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_zynq_ultra_ps_e_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "coincidence_detector.hwdef" *) 
+(* CORE_GENERATION_INFO = "coincidence_detector,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=coincidence_detector,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=15,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=1,da_zynq_ultra_ps_e_cnt=1,synth_mode=None}" *) (* HW_HANDOFF = "coincidence_detector.hwdef" *) 
 module coincidence_detector
-   (Channels);
-  input [3:0]Channels;
+   (DS_Channels);
+  input [7:0]DS_Channels;
 
-  wire [3:0]Channels_1;
+  wire [7:0]DS_Channels_1;
+  wire [3:0]ds_to_single_0_Channels;
   wire [39:0]ps8_0_axi_periph_M00_AXI_ARADDR;
   wire ps8_0_axi_periph_M00_AXI_ARREADY;
   wire [0:0]ps8_0_axi_periph_M00_AXI_ARVALID;
@@ -128,14 +129,15 @@ module coincidence_detector
   wire [15:0]zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WSTRB;
   wire zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WVALID;
   wire zynq_ultra_ps_e_0_pl_clk0;
+  wire zynq_ultra_ps_e_0_pl_clk3;
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
-  assign Channels_1 = Channels[3:0];
+  assign DS_Channels_1 = DS_Channels[7:0];
   coincidence_detector_axi_timer_0_0 axi_timer_0
        (.capturetrig0(1'b0),
         .capturetrig1(1'b0),
         .freeze(1'b0),
-        .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
+        .s_axi_aclk(zynq_ultra_ps_e_0_pl_clk3),
         .s_axi_araddr(ps8_0_axi_periph_M00_AXI_ARADDR[4:0]),
         .s_axi_aresetn(rst_ps8_0_100M_peripheral_aresetn),
         .s_axi_arready(ps8_0_axi_periph_M00_AXI_ARREADY),
@@ -155,8 +157,9 @@ module coincidence_detector
         .s_axi_wstrb(ps8_0_axi_periph_M00_AXI_WSTRB),
         .s_axi_wvalid(ps8_0_axi_periph_M00_AXI_WVALID));
   coincidence_detector_axilite_detector_0_0 axilite_detector_0
-       (.Channels(Channels_1),
-        .s00_axi_aclk(zynq_ultra_ps_e_0_pl_clk0),
+       (.Channels(ds_to_single_0_Channels),
+        .PL_Clk(zynq_ultra_ps_e_0_pl_clk0),
+        .s00_axi_aclk(zynq_ultra_ps_e_0_pl_clk3),
         .s00_axi_araddr(ps8_0_axi_periph_M01_AXI_ARADDR[6:0]),
         .s00_axi_aresetn(rst_ps8_0_100M_peripheral_aresetn),
         .s00_axi_arprot(ps8_0_axi_periph_M01_AXI_ARPROT),
@@ -177,10 +180,13 @@ module coincidence_detector
         .s00_axi_wready(ps8_0_axi_periph_M01_AXI_WREADY),
         .s00_axi_wstrb(ps8_0_axi_periph_M01_AXI_WSTRB),
         .s00_axi_wvalid(ps8_0_axi_periph_M01_AXI_WVALID));
+  coincidence_detector_ds_to_single_0_0 ds_to_single_0
+       (.Channels(ds_to_single_0_Channels),
+        .DS_Channels(DS_Channels_1));
   coincidence_detector_ps8_0_axi_periph_0 ps8_0_axi_periph
-       (.ACLK(zynq_ultra_ps_e_0_pl_clk0),
+       (.ACLK(zynq_ultra_ps_e_0_pl_clk3),
         .ARESETN(rst_ps8_0_100M_peripheral_aresetn),
-        .M00_ACLK(zynq_ultra_ps_e_0_pl_clk0),
+        .M00_ACLK(zynq_ultra_ps_e_0_pl_clk3),
         .M00_ARESETN(rst_ps8_0_100M_peripheral_aresetn),
         .M00_AXI_araddr(ps8_0_axi_periph_M00_AXI_ARADDR),
         .M00_AXI_arready(ps8_0_axi_periph_M00_AXI_ARREADY),
@@ -199,7 +205,7 @@ module coincidence_detector
         .M00_AXI_wready(ps8_0_axi_periph_M00_AXI_WREADY),
         .M00_AXI_wstrb(ps8_0_axi_periph_M00_AXI_WSTRB),
         .M00_AXI_wvalid(ps8_0_axi_periph_M00_AXI_WVALID),
-        .M01_ACLK(zynq_ultra_ps_e_0_pl_clk0),
+        .M01_ACLK(zynq_ultra_ps_e_0_pl_clk3),
         .M01_ARESETN(rst_ps8_0_100M_peripheral_aresetn),
         .M01_AXI_araddr(ps8_0_axi_periph_M01_AXI_ARADDR),
         .M01_AXI_arprot(ps8_0_axi_periph_M01_AXI_ARPROT),
@@ -220,7 +226,7 @@ module coincidence_detector
         .M01_AXI_wready(ps8_0_axi_periph_M01_AXI_WREADY),
         .M01_AXI_wstrb(ps8_0_axi_periph_M01_AXI_WSTRB),
         .M01_AXI_wvalid(ps8_0_axi_periph_M01_AXI_WVALID),
-        .S00_ACLK(zynq_ultra_ps_e_0_pl_clk0),
+        .S00_ACLK(zynq_ultra_ps_e_0_pl_clk3),
         .S00_ARESETN(rst_ps8_0_100M_peripheral_aresetn),
         .S00_AXI_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .S00_AXI_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
@@ -259,7 +265,7 @@ module coincidence_detector
         .S00_AXI_wready(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WREADY),
         .S00_AXI_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WSTRB),
         .S00_AXI_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_WVALID),
-        .S01_ACLK(zynq_ultra_ps_e_0_pl_clk0),
+        .S01_ACLK(zynq_ultra_ps_e_0_pl_clk3),
         .S01_ARESETN(rst_ps8_0_100M_peripheral_aresetn),
         .S01_AXI_araddr(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_ARADDR),
         .S01_AXI_arburst(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_ARBURST),
@@ -304,7 +310,7 @@ module coincidence_detector
         .ext_reset_in(zynq_ultra_ps_e_0_pl_resetn0),
         .mb_debug_sys_rst(1'b0),
         .peripheral_aresetn(rst_ps8_0_100M_peripheral_aresetn),
-        .slowest_sync_clk(zynq_ultra_ps_e_0_pl_clk0));
+        .slowest_sync_clk(zynq_ultra_ps_e_0_pl_clk3));
   coincidence_detector_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0
        (.maxigp0_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .maxigp0_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
@@ -380,9 +386,10 @@ module coincidence_detector
         .maxigp1_wready(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WREADY),
         .maxigp1_wstrb(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WSTRB),
         .maxigp1_wvalid(zynq_ultra_ps_e_0_M_AXI_HPM1_FPD_WVALID),
-        .maxihpm0_fpd_aclk(zynq_ultra_ps_e_0_pl_clk0),
-        .maxihpm1_fpd_aclk(zynq_ultra_ps_e_0_pl_clk0),
+        .maxihpm0_fpd_aclk(zynq_ultra_ps_e_0_pl_clk3),
+        .maxihpm1_fpd_aclk(zynq_ultra_ps_e_0_pl_clk3),
         .pl_clk0(zynq_ultra_ps_e_0_pl_clk0),
+        .pl_clk3(zynq_ultra_ps_e_0_pl_clk3),
         .pl_ps_irq0(1'b0),
         .pl_resetn0(zynq_ultra_ps_e_0_pl_resetn0));
 endmodule

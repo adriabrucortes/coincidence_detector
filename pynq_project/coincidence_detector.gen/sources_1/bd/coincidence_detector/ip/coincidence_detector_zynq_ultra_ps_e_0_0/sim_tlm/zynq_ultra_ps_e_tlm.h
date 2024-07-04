@@ -137,6 +137,7 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     sc_core::sc_in<sc_dt::sc_bv<1> >  pl_ps_irq0;
     sc_core::sc_out<bool> pl_resetn0;
     sc_core::sc_out<bool> pl_clk0;
+    sc_core::sc_out<bool> pl_clk3;
      
     // Xtlm aximm slave sockets are delcared here. these XTLM sockets will hierachically bound with 
     // slave sockets defined in vivado generated wrapper.
@@ -185,11 +186,15 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     // sc_clocks for generating pl clocks
     // output pins pl_clk0..3 are drived by these clocks
     sc_core::sc_clock pl_clk0_clk;
+    sc_core::sc_clock pl_clk3_clk;
 
     
     //Method which is sentive to pl_clk0_clk sc_clock object
     //pl_clk0 pin written based on pl_clk0_clk clock value 
     void trigger_pl_clk0_pin();
+    //Method which is sentive to pl_clk3_clk sc_clock object
+    //pl_clk3 pin written based on pl_clk3_clk clock value 
+    void trigger_pl_clk3_pin();
 
     void pl_ps_irq0_method();
     //pl_resetn0 output reset pin get toggle when emio bank 2's 31th signal gets toggled

@@ -61,7 +61,7 @@
 
 
 #ifdef XILINX_SIMULATOR
-coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm), maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm), maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk3("pl_clk3")
 {
 
   // initialize pins
@@ -70,6 +70,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
+  mp_impl->pl_clk3(pl_clk3);
 
   // initialize transactors
   mp_M_AXI_HPM0_FPD_transactor = NULL;
@@ -92,7 +93,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -120,7 +121,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM0_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM0_FPD_transactor", M_AXI_HPM0_FPD_transactor_param_props);
 
@@ -189,7 +190,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -217,7 +218,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM1_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM1_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM1_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM1_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM1_FPD_transactor", M_AXI_HPM1_FPD_transactor_param_props);
 
@@ -283,7 +284,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef XM_SYSTEMC
-coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm), maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm), maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk3("pl_clk3")
 {
 
   // initialize pins
@@ -292,6 +293,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
+  mp_impl->pl_clk3(pl_clk3);
 
   // initialize transactors
   mp_M_AXI_HPM0_FPD_transactor = NULL;
@@ -314,7 +316,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -342,7 +344,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM0_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM0_FPD_transactor", M_AXI_HPM0_FPD_transactor_param_props);
 
@@ -411,7 +413,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -439,7 +441,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM1_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM1_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM1_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM1_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM1_FPD_transactor", M_AXI_HPM1_FPD_transactor_param_props);
 
@@ -505,7 +507,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef RIVIERA
-coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm), maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm), maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk3("pl_clk3")
 {
 
   // initialize pins
@@ -514,6 +516,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
+  mp_impl->pl_clk3(pl_clk3);
 
   // initialize transactors
   mp_M_AXI_HPM0_FPD_transactor = NULL;
@@ -536,7 +539,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -564,7 +567,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM0_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM0_FPD_transactor", M_AXI_HPM0_FPD_transactor_param_props);
 
@@ -633,7 +636,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -661,7 +664,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
     M_AXI_HPM1_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM1_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM1_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM1_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM1_FPD_transactor", M_AXI_HPM1_FPD_transactor_param_props);
 
@@ -727,7 +730,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef VCSSYSTEMC
-coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm),  maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm),  maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk3("pl_clk3")
 {
   // initialize pins
   mp_impl->maxihpm0_fpd_aclk(maxihpm0_fpd_aclk);
@@ -735,6 +738,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
+  mp_impl->pl_clk3(pl_clk3);
 
   // initialize transactors
   mp_M_AXI_HPM0_FPD_transactor = NULL;
@@ -747,7 +751,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -775,7 +779,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM0_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM0_FPD_transactor", M_AXI_HPM0_FPD_transactor_param_props);
   mp_M_AXI_HPM0_FPD_transactor->AWID(maxigp0_awid);
@@ -825,7 +829,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -853,7 +857,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM1_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM1_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM1_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM1_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM1_FPD_transactor", M_AXI_HPM1_FPD_transactor_param_props);
   mp_M_AXI_HPM1_FPD_transactor->AWID(maxigp1_awid);
@@ -949,7 +953,7 @@ void coincidence_detector_zynq_ultra_ps_e_0_0::before_end_of_elaboration()
 
 
 #ifdef MTI_SYSTEMC
-coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm),  maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0")
+coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0_0(const sc_core::sc_module_name& nm) : coincidence_detector_zynq_ultra_ps_e_0_0_sc(nm),  maxihpm0_fpd_aclk("maxihpm0_fpd_aclk"), maxigp0_awid("maxigp0_awid"), maxigp0_awaddr("maxigp0_awaddr"), maxigp0_awlen("maxigp0_awlen"), maxigp0_awsize("maxigp0_awsize"), maxigp0_awburst("maxigp0_awburst"), maxigp0_awlock("maxigp0_awlock"), maxigp0_awcache("maxigp0_awcache"), maxigp0_awprot("maxigp0_awprot"), maxigp0_awvalid("maxigp0_awvalid"), maxigp0_awuser("maxigp0_awuser"), maxigp0_awready("maxigp0_awready"), maxigp0_wdata("maxigp0_wdata"), maxigp0_wstrb("maxigp0_wstrb"), maxigp0_wlast("maxigp0_wlast"), maxigp0_wvalid("maxigp0_wvalid"), maxigp0_wready("maxigp0_wready"), maxigp0_bid("maxigp0_bid"), maxigp0_bresp("maxigp0_bresp"), maxigp0_bvalid("maxigp0_bvalid"), maxigp0_bready("maxigp0_bready"), maxigp0_arid("maxigp0_arid"), maxigp0_araddr("maxigp0_araddr"), maxigp0_arlen("maxigp0_arlen"), maxigp0_arsize("maxigp0_arsize"), maxigp0_arburst("maxigp0_arburst"), maxigp0_arlock("maxigp0_arlock"), maxigp0_arcache("maxigp0_arcache"), maxigp0_arprot("maxigp0_arprot"), maxigp0_arvalid("maxigp0_arvalid"), maxigp0_aruser("maxigp0_aruser"), maxigp0_arready("maxigp0_arready"), maxigp0_rid("maxigp0_rid"), maxigp0_rdata("maxigp0_rdata"), maxigp0_rresp("maxigp0_rresp"), maxigp0_rlast("maxigp0_rlast"), maxigp0_rvalid("maxigp0_rvalid"), maxigp0_rready("maxigp0_rready"), maxigp0_awqos("maxigp0_awqos"), maxigp0_arqos("maxigp0_arqos"), maxihpm1_fpd_aclk("maxihpm1_fpd_aclk"), maxigp1_awid("maxigp1_awid"), maxigp1_awaddr("maxigp1_awaddr"), maxigp1_awlen("maxigp1_awlen"), maxigp1_awsize("maxigp1_awsize"), maxigp1_awburst("maxigp1_awburst"), maxigp1_awlock("maxigp1_awlock"), maxigp1_awcache("maxigp1_awcache"), maxigp1_awprot("maxigp1_awprot"), maxigp1_awvalid("maxigp1_awvalid"), maxigp1_awuser("maxigp1_awuser"), maxigp1_awready("maxigp1_awready"), maxigp1_wdata("maxigp1_wdata"), maxigp1_wstrb("maxigp1_wstrb"), maxigp1_wlast("maxigp1_wlast"), maxigp1_wvalid("maxigp1_wvalid"), maxigp1_wready("maxigp1_wready"), maxigp1_bid("maxigp1_bid"), maxigp1_bresp("maxigp1_bresp"), maxigp1_bvalid("maxigp1_bvalid"), maxigp1_bready("maxigp1_bready"), maxigp1_arid("maxigp1_arid"), maxigp1_araddr("maxigp1_araddr"), maxigp1_arlen("maxigp1_arlen"), maxigp1_arsize("maxigp1_arsize"), maxigp1_arburst("maxigp1_arburst"), maxigp1_arlock("maxigp1_arlock"), maxigp1_arcache("maxigp1_arcache"), maxigp1_arprot("maxigp1_arprot"), maxigp1_arvalid("maxigp1_arvalid"), maxigp1_aruser("maxigp1_aruser"), maxigp1_arready("maxigp1_arready"), maxigp1_rid("maxigp1_rid"), maxigp1_rdata("maxigp1_rdata"), maxigp1_rresp("maxigp1_rresp"), maxigp1_rlast("maxigp1_rlast"), maxigp1_rvalid("maxigp1_rvalid"), maxigp1_rready("maxigp1_rready"), maxigp1_awqos("maxigp1_awqos"), maxigp1_arqos("maxigp1_arqos"), pl_ps_irq0("pl_ps_irq0"), pl_resetn0("pl_resetn0"), pl_clk0("pl_clk0"), pl_clk3("pl_clk3")
 {
   // initialize pins
   mp_impl->maxihpm0_fpd_aclk(maxihpm0_fpd_aclk);
@@ -957,6 +961,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
   mp_impl->pl_ps_irq0(pl_ps_irq0);
   mp_impl->pl_resetn0(pl_resetn0);
   mp_impl->pl_clk0(pl_clk0);
+  mp_impl->pl_clk3(pl_clk3);
 
   // initialize transactors
   mp_M_AXI_HPM0_FPD_transactor = NULL;
@@ -969,7 +974,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM0_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM0_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -997,7 +1002,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM0_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM0_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM0_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM0_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM0_FPD_transactor", M_AXI_HPM0_FPD_transactor_param_props);
   mp_M_AXI_HPM0_FPD_transactor->AWID(maxigp0_awid);
@@ -1047,7 +1052,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "8");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
-    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_HPM1_FPD_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ID_WIDTH", "16");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_HPM1_FPD_transactor_param_props.addLong("AWUSER_WIDTH", "16");
@@ -1075,7 +1080,7 @@ coincidence_detector_zynq_ultra_ps_e_0_0::coincidence_detector_zynq_ultra_ps_e_0
     M_AXI_HPM1_FPD_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_HPM1_FPD_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_HPM1_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_HPM1_FPD_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_HPM1_FPD_transactor = new xtlm::xaximm_xtlm2pin_t<128,40,16,16,1,1,16,1>("M_AXI_HPM1_FPD_transactor", M_AXI_HPM1_FPD_transactor_param_props);
   mp_M_AXI_HPM1_FPD_transactor->AWID(maxigp1_awid);

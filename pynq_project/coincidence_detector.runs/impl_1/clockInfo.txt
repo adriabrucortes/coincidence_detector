@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Wed May 15 10:27:13 2024
+| Date         : Thu Jul  4 12:38:27 2024
 | Host         : Elitebook-QCommsUB-Adria
 | Design       : design_1
 | Device       : xczu3eg-sbva484-1-E-
@@ -11,13 +11,13 @@ For more information on clockInfo.txt clock routing debug file see https://suppo
 ***********************
 Running Pre-CRP Checker
 ***********************
-Number of global clocks: 1
+Number of global clocks: 2
 	Number of BUFGCE: 0
 	Number of BUFGCE_HDIO: 0
 	Number of BUFG_CTRL: 0
 	Number of BUFGCE_DIV: 0
 	Number of BUFG_GT: 0
-	Number of BUFG_PS: 1
+	Number of BUFG_PS: 2
 	Number of BUFG_FABRIC: 0
 Pre-CRP Checker took 0 secs
 
@@ -25,6 +25,11 @@ Pre-CRP Checker took 0 secs
 Clock Net Route Info (CRP Input)
 ********************************
 Clock 1: coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk0
+	Clock source type: BUFG_PS
+	Clock source region: X0Y2
+	initial rect ((0, 0), (0, 2))
+
+Clock 2: coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk3
 	Clock source type: BUFG_PS
 	Clock source region: X0Y2
 	Clock regions with locked loads: (0, 0) (0, 1) 

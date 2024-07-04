@@ -91,7 +91,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
   // 'S_AXI' transactor parameters
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "16");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -121,7 +121,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
     S_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,16,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
 
@@ -194,7 +194,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
   // 'M_AXI' transactor parameters
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -224,7 +224,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
     M_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
 
@@ -322,7 +322,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
   // 'S_AXI' transactor parameters
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "16");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -352,7 +352,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
     S_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,16,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
 
@@ -425,7 +425,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
   // 'M_AXI' transactor parameters
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -455,7 +455,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
     M_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
 
@@ -553,7 +553,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
   // 'S_AXI' transactor parameters
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "16");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -583,7 +583,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
     S_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,16,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
 
@@ -656,7 +656,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
   // 'M_AXI' transactor parameters
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -686,7 +686,7 @@ void coincidence_detector_auto_ds_1::before_end_of_elaboration()
     M_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
 
@@ -773,7 +773,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
   // configure S_AXI_transactor
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "16");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -803,7 +803,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
     S_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,16,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
   mp_S_AXI_transactor->AWID(s_axi_awid);
@@ -857,7 +857,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
   // configure M_AXI_transactor
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -887,7 +887,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
     M_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
   mp_M_AXI_transactor->AWADDR(m_axi_awaddr);
@@ -1004,7 +1004,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
   // configure S_AXI_transactor
     xsc::common_cpp::properties S_AXI_transactor_param_props;
     S_AXI_transactor_param_props.addLong("DATA_WIDTH", "128");
-    S_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    S_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     S_AXI_transactor_param_props.addLong("ID_WIDTH", "16");
     S_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     S_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1034,7 +1034,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
     S_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     S_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     S_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    S_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_S_AXI_transactor = new xtlm::xaximm_pin2xtlm_t<128,40,16,1,1,1,1,1>("S_AXI_transactor", S_AXI_transactor_param_props);
   mp_S_AXI_transactor->AWID(s_axi_awid);
@@ -1088,7 +1088,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
   // configure M_AXI_transactor
     xsc::common_cpp::properties M_AXI_transactor_param_props;
     M_AXI_transactor_param_props.addLong("DATA_WIDTH", "32");
-    M_AXI_transactor_param_props.addLong("FREQ_HZ", "100000000");
+    M_AXI_transactor_param_props.addLong("FREQ_HZ", "300000000");
     M_AXI_transactor_param_props.addLong("ID_WIDTH", "0");
     M_AXI_transactor_param_props.addLong("ADDR_WIDTH", "40");
     M_AXI_transactor_param_props.addLong("AWUSER_WIDTH", "0");
@@ -1118,7 +1118,7 @@ coincidence_detector_auto_ds_1::coincidence_detector_auto_ds_1(const sc_core::sc
     M_AXI_transactor_param_props.addFloat("PHASE", "0.0");
     M_AXI_transactor_param_props.addString("PROTOCOL", "AXI4");
     M_AXI_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
-    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk0");
+    M_AXI_transactor_param_props.addString("CLK_DOMAIN", "coincidence_detector_zynq_ultra_ps_e_0_0_pl_clk3");
 
     mp_M_AXI_transactor = new xtlm::xaximm_xtlm2pin_t<32,40,1,1,1,1,1,1>("M_AXI_transactor", M_AXI_transactor_param_props);
   mp_M_AXI_transactor->AWADDR(m_axi_awaddr);

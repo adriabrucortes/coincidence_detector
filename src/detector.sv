@@ -21,6 +21,7 @@ module detector #(parameter NCHAN = 4, NBITS = 4, NREGS = 2) (
 
 wire Reset_n;
 
+reg  [(NCHAN*(NCHAN-1)/2)-1:0] iCnt_pairs_raw;
 reg  [(NCHAN*(NCHAN-1)/2)-1:0] iCnt_pairs;
 reg  [NCHAN-1:0] delayed;
 wire [NCHAN-1:0] Pulses; // Posedge
@@ -34,6 +35,7 @@ always @(posedge Clk) begin
     Restart_o <= Restart_i;
 end
 
+// Delay
 DelayGenerator #(
     .NCHAN(NCHAN),
     .NBITS(NBITS), // 2^NBITS >= NREGS
@@ -41,17 +43,29 @@ DelayGenerator #(
 ) delay (
     .Clk            (Clk),
     .Rst_n          (Reset_n),
-    .Channels       (Pulses),
+    .Channels       (Channels),
     .Delays         (Delays_i),
     .DlayChann      (delayed)
 );
 
+// Channels -> delay --> posedge -> chan_cnt
+//                   L-> AND -> posedge -> coincidence_cnt
+
+// Posedge detectors
 pos_edge_det #(
     .NCHAN(NCHAN)
-) posedge_det (
+) posedge_chan (
     .Clk            (Clk),
-    .Sig            (Channels),
+    .Sig            (delayed),
     .Pe             (Pulses)
+);
+
+pos_edge_det #(
+    .NCHAN(NCHAN*(NCHAN-1)/2)
+) posedge_counts (
+    .Clk            (Clk),
+    .Sig            (iCnt_pairs_raw),
+    .Pe             (iCnt_pairs)
 );
 
 // Clk counter control
@@ -78,7 +92,7 @@ always @(posedge Clk or negedge Reset_n) begin
     end else if ((Enable_i) && (Cnt_Clk < nCycles_i)) begin
         // Counts per channel
         for (int i = 0; i < NCHAN; i++) begin
-            Cnt_chann[i] <= Cnt_chann[i] + delayed[i]; // THIS IS DIFFERENT
+            Cnt_chann[i] <= Cnt_chann[i] + Pulses[i];
         end
     
     end else begin
@@ -101,15 +115,15 @@ always @(posedge Clk or negedge Reset_n) begin
 
         for (int i = 0; i < NCHAN; i++) begin
             for (int j = i+1; j < NCHAN; j++) begin // Iterate over all pairs (i, j) where j > i
-                iCnt_pairs[index] <= delayed[i] & delayed[j]; // Cnt_pairs in this clock
-                Cnt_pairs[index] <= Cnt_pairs[index] + (delayed[i] & delayed[j]); // Accumulated counts
+                iCnt_pairs_raw[index] <= delayed[i] & delayed[j]; // Cnt_pairs in this clock
+                Cnt_pairs[index] <= Cnt_pairs[index] + iCnt_pairs; // Accumulated counts
                 index = index + 1;
             end
         end
 
     end else begin
         iCnt_pairs <= iCnt_pairs;
-        Cnt_pairs <= Cnt_pairs;
+        Cnt_pairs_raw <= Cnt_pairs_raw;
 
     end
 end

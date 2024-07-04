@@ -1,6 +1,122 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Jul  4 01:23:22 2024
+| Host         : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'coincidence_detector_axilite_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of coincidence_detector_axilite_detector_0_0 (xilinx.com:user:axilite_detector:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Jul  3 17:58:57 2024
+| Host         : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'coincidence_detector_axilite_detector_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of coincidence_detector_axilite_detector_0_0 (xilinx.com:user:axilite_detector:1.0) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'coincidence_detector_axilite_detector_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'PL_Clk'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Jul  3 11:50:34 2024
+| Host         : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'coincidence_detector_axilite_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of coincidence_detector_axilite_detector_0_0 (xilinx.com:user:axilite_detector:1.0) from (Rev. 6) to (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Jul  3 11:43:39 2024
+| Host         : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'coincidence_detector_axilite_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of coincidence_detector_axilite_detector_0_0 (xilinx.com:user:axilite_detector:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed May 15 14:41:38 2024
+| Host         : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'coincidence_detector_axilite_detector_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the update of coincidence_detector_axilite_detector_0_0 (xilinx.com:user:axilite_detector:1.0 (Rev. 5)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
 | Date         : Wed May 15 09:25:33 2024
 | Host         : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

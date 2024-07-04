@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN65LVDS31D
+D SN65LVDS31D, LVDS Transmitter Quad LVTTL 400Mbit/s, 3  3.6 V, 16-Pin, SOIC
+K
+F http://www.ti.com/lit/ds/symlink/sn65lvds31.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Wed May 15 10:28:58 2024
+| Date             : Thu Jul  4 12:51:35 2024
 | Host             : Elitebook-QCommsUB-Adria running 64-bit major release  (build 9200)
 | Command          : report_power -file coincidence_detector_wrapper_power_routed.rpt -pb coincidence_detector_wrapper_power_summary_routed.pb -rpx coincidence_detector_wrapper_power_routed.rpx
 | Design           : coincidence_detector_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.966        |
+| Total On-Chip Power (W)  | 2.243        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.655        |
-| Device Static (W)        | 0.311        |
+| Dynamic (W)              | 1.930        |
+| Device Static (W)        | 0.313        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 94.6         |
-| Junction Temperature (C) | 30.4         |
+| Max Ambient (C)          | 93.9         |
+| Junction Temperature (C) | 31.1         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.020 |        3 |       --- |             --- |
-| CLB Logic                |     0.006 |    14298 |       --- |             --- |
-|   LUT as Logic           |     0.005 |     4089 |     70560 |            5.80 |
-|   Register               |    <0.001 |     8079 |    141120 |            5.72 |
-|   LUT as Shift Register  |    <0.001 |       91 |     28800 |            0.32 |
-|   CARRY8                 |    <0.001 |      108 |      8820 |            1.22 |
+| Clocks                   |     0.168 |        4 |       --- |             --- |
+| CLB Logic                |     0.038 |    14012 |       --- |             --- |
+|   LUT as Logic           |     0.027 |     4121 |     70560 |            5.84 |
+|   Register               |     0.008 |     7844 |    141120 |            5.56 |
+|   LUT as Shift Register  |     0.001 |       91 |     28800 |            0.32 |
 |   LUT as Distributed RAM |    <0.001 |       88 |     28800 |            0.31 |
-|   Others                 |     0.000 |      262 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |      855 |     70560 |            1.21 |
-|   BUFG                   |     0.000 |        2 |        24 |            8.33 |
-| Signals                  |     0.008 |    11132 |       --- |             --- |
-| I/O                      |    <0.001 |        4 |        82 |            4.88 |
-| PS8                      |     1.620 |        1 |       --- |             --- |
-| Static Power             |     0.311 |          |           |                 |
-|   PS Static              |     0.096 |          |           |                 |
-|   PL Static              |     0.215 |          |           |                 |
-| Total                    |     1.966 |          |           |                 |
+|   CARRY8                 |    <0.001 |       78 |      8820 |            0.88 |
+|   Others                 |     0.000 |      273 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      825 |     70560 |            1.17 |
+| Signals                  |     0.083 |    10878 |       --- |             --- |
+| I/O                      |     0.012 |        8 |        82 |            9.76 |
+| PS8                      |     1.628 |        1 |       --- |             --- |
+| Static Power             |     0.313 |          |           |                 |
+|   PS Static              |     0.097 |          |           |                 |
+|   PL Static              |     0.216 |          |           |                 |
+| Total                    |     2.243 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,11 +77,11 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     0.094 |       0.040 |      0.053 |       NA    | Unspecified | NA         |
-| Vccint_io       |       0.850 |     0.027 |       0.000 |      0.027 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     0.395 |       0.340 |      0.055 |       NA    | Unspecified | NA         |
+| Vccint_io       |       0.850 |     0.029 |       0.002 |      0.027 |       NA    | Unspecified | NA         |
 | Vccbram         |       0.850 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
-| Vccaux          |       1.800 |     0.048 |       0.000 |      0.048 |       NA    | Unspecified | NA         |
-| Vccaux_io       |       1.800 |     0.025 |       0.000 |      0.025 |       NA    | Unspecified | NA         |
+| Vccaux          |       1.800 |     0.047 |       0.000 |      0.047 |       NA    | Unspecified | NA         |
+| Vccaux_io       |       1.800 |     0.031 |       0.006 |      0.025 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18          |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -91,8 +90,8 @@ Table of Contents
 | Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
-| VCC_PSINTFP     |       0.850 |     0.953 |       0.917 |      0.036 |       NA    | Unspecified | NA         |
-| VCC_PSINTLP     |       0.850 |     0.290 |       0.282 |      0.007 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     0.963 |       0.926 |      0.037 |       NA    | Unspecified | NA         |
+| VCC_PSINTLP     |       0.850 |     0.290 |       0.282 |      0.008 |       NA    | Unspecified | NA         |
 | VPS_MGTRAVCC    |       0.850 |     0.135 |       0.134 |      0.001 |       NA    | Unspecified | NA         |
 | VCC_PSINTFP_DDR |       0.850 |     0.268 |       0.263 |      0.005 |       NA    | Unspecified | NA         |
 | VCC_PSPLL       |       1.200 |     0.068 |       0.066 |      0.002 |       NA    | Unspecified | NA         |
@@ -149,7 +148,8 @@ Table of Contents
 +----------+--------------------------------------------------------------------+-----------------+
 | Clock    | Domain                                                             | Constraint (ns) |
 +----------+--------------------------------------------------------------------+-----------------+
-| clk_pl_0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0] |            10.0 |
+| clk_pl_0 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0] |             0.8 |
+| clk_pl_3 | coincidence_detector_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[3] |             3.3 |
 +----------+--------------------------------------------------------------------+-----------------+
 
 
@@ -162,18 +162,20 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| coincidence_detector_wrapper |     1.655 |
-|   coincidence_detector_i     |     1.655 |
-|     axi_timer_0              |     0.002 |
-|       U0                     |     0.002 |
-|     axilite_detector_0       |     0.017 |
-|       inst                   |     0.017 |
-|     ps8_0_axi_periph         |     0.013 |
-|       s00_couplers           |     0.006 |
-|       s01_couplers           |     0.006 |
-|       xbar                   |     0.001 |
-|     zynq_ultra_ps_e_0        |     1.622 |
-|       inst                   |     1.622 |
+| coincidence_detector_wrapper |     1.930 |
+|   coincidence_detector_i     |     1.930 |
+|     axi_timer_0              |     0.006 |
+|       U0                     |     0.006 |
+|     axilite_detector_0       |     0.226 |
+|       inst                   |     0.226 |
+|     ds_to_single_0           |     0.013 |
+|       inst                   |     0.013 |
+|     ps8_0_axi_periph         |     0.051 |
+|       s00_couplers           |     0.024 |
+|       s01_couplers           |     0.023 |
+|       xbar                   |     0.005 |
+|     zynq_ultra_ps_e_0        |     1.633 |
+|       inst                   |     1.633 |
 +------------------------------+-----------+
 
 

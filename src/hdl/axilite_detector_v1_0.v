@@ -16,6 +16,7 @@
 	(
 		// Users to add ports here
         input wire [4-1:0] Channels,
+		input wire		   Clk,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -118,7 +119,7 @@
        .NREGS(1024)
     ) detector (
        // Input ports
-       .Clk          (s00_axi_aclk),
+       .Clk          (Clk),
        .Rst_n        (s00_axi_aresetn),
        .Channels     (Channels),
        
