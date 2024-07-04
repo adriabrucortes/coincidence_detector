@@ -7,8 +7,7 @@
       "name": "coincidence_detector",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2023.2",
-      "validated": "true"
+      "tool_version": "2023.2"
     },
     "design_tree": {
       "zynq_ultra_ps_e_0": "",
@@ -554,7 +553,7 @@
             "value": "IOPLL"
           },
           "PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ": {
-            "value": "1179.649902"
+            "value": "1500.000000"
           },
           "PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0": {
             "value": "1"
@@ -566,7 +565,7 @@
             "value": "100"
           },
           "PSU__CRL_APB__PL0_REF_CTRL__SRCSEL": {
-            "value": "RPLL"
+            "value": "IOPLL"
           },
           "PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ": {
             "value": "24.999975"
